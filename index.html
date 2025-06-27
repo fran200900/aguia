@@ -21,7 +21,8 @@
   <meta property="og:description" content="Aguia Oficial, banca águia oficial">
   <meta property="og:url" content="https://bancaaguiaoficial.com.br">
   <meta property="og:type" content="website">
-  <title>Aguia Oficial - Melhor banca online do Brasil, credibilidade e confiança</title>
+  <meta property="og:image" content="https://clubeloterias.com/og-image.jpg">
+  <title>Aguia Oficial - Melhor banca do Brasil, credibilidade e confiança</title>
   <link rel="icon" href="aguia.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -74,28 +75,10 @@
       display: flex;
       flex-direction: column;
     }
-    #tiger, #aguia, #brasileira, #brazz, #suporte {
+    #tiger, #aguia, #brasileira {
       width: 100%;
       height: 100%;
       transition: opacity 0.5s ease-in-out, transform 0.3s ease;
-    }
-    #suporte {
-      padding: 16px;
-      max-width: 600px;
-      margin: 0 auto;
-      display: none;
-    }
-    #suporte-content {
-      padding: 16px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-      width: 100%;
-      opacity: 0;
-    }
-    #suporte-content.visible {
-      opacity: 1;
-      transform: translateY(0);
     }
     iframe {
       width: 100%;
@@ -185,12 +168,6 @@
         margin-top: 50px;
         margin-bottom: 60px;
       }
-      #suporte {
-        padding: 12px;
-      }
-      #suporte-content {
-        max-width: 100%;
-      }
       footer {
         padding: 6px;
         height: 60px;
@@ -225,17 +202,15 @@
 
   <div id="main-content">
     <div id="tiger">
-        <iframe id="embeddedIframe" allow="clipboard-read; clipboard-write" src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" width="100%" height="600" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>>
+        <iframe id="embeddedIframe" allow="clipboard-read; clipboard-write" src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" width="100%" height="600" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>
     </div>
-      <div id="aguia" class="hidden">
+    <div id="aguia" class="hidden">
         <iframe allow="clipboard-read; clipboard-write" src="https://app.acertos.club/pr/JcsF2PpU" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-      </div>
-      <div id="brasileira" class="hidden">
+    </div>
+    <div id="brasileira" class="hidden">
         <iframe allow="clipboard-read; clipboard-write" src="https://app.feiticeira.vip/pr/2iCVbLKr" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-      </div>
-      <div id="brazz" class="hidden">
-        <iframe allow="clipboard-read; clipboard-write" src="https://app.brazz.club/pr/oC7VMz8A" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="row">
@@ -248,12 +223,8 @@
         Acertos
       </button>
       <button onclick="mostrar('brasileira')">
-        <img src="feiticeira.png" alt="Brasileira">
+        <img src="feiticeira.png" alt="feiticeira">
         Feiticeira
-      </button>
-      <button onclick="mostrar('brazz')">
-        <img src="brazz.png" alt="Brazz">
-        Brazz
       </button>
       <button onclick="mostrar('suporte')">
         <i class="fab fa-whatsapp"></i>
@@ -265,27 +236,20 @@
 
   <script>
     function mostrar(id) {
-      const tiger = document.getElementById('tiger');
-      const aguia = document.getElementById('aguia');
-      const brasileira = document.getElementById('brasileira');
-      const brazz = document.getElementById('brazz');
-      const suporte = document.getElementById('suporte');
-      const suporteContent = document.getElementById('suporte-content');
-
+      const sections = ['tiger', 'aguia', 'brasileira'];
       if (id === 'suporte') {
         window.open('https://wa.me/5583994073892?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21', '_blank');
         return;
       }
 
-      tiger.style.display = id === 'tiger' ? 'block' : 'none';
-      aguia.style.display = id === 'aguia' ? 'block' : 'none';
-      brasileira.style.display = id === 'brasileira' ? 'block' : 'none';
-      brazz.style.display = id === 'brazz' ? 'block' : 'none';
-      suporte.style.display = 'none';
+      sections.forEach(sec => {
+        const el = document.getElementById(sec);
+        el.style.display = sec === id ? 'block' : 'none';
+      });
 
       document.querySelectorAll('footer button').forEach(button => {
         button.classList.remove('selected');
-        if (button.getAttribute('onclick') === mostrar('${id}')) {
+        if (button.getAttribute('onclick') === `mostrar('${id}')`) {
           button.classList.add('selected');
         }
       });
