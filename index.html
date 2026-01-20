@@ -2,18 +2,16 @@
 <html lang="pt-BR">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-70QZPPYYF7');
-</script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-70QZPPYYF7');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://bancaaguiaoficial.com.br/;  script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; frame-src *; connect-src *;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://bancaaguiaoficial.com.br/ https://app.aguiaoficial.com https://app.acertos.club https://app.feiticeira.club; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; frame-src *; connect-src *;">
   <meta name="description" content="Águia Oficial - Melhor banca do Brasil. 30% de bônus para cadastros novos, Resultados ao vivo e aposte com segurança em uma banca com responsabilidade e confiavel">
   <meta name="keywords" content="Águia Oficial, banca online com credibilidade e confiança!">
   <meta name="robots" content="index, follow">
@@ -26,6 +24,7 @@
   <link rel="icon" href="aguia.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -51,7 +50,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      z-index: 10;
+      z-index: 1000;
     }
     header img {
       height: 35px;
@@ -70,90 +69,108 @@
     #main-content {
       flex: 1;
       margin-top: 50px;
-      margin-bottom: 60px;
       overflow-y: auto;
-      display: flex;
-      flex-direction: column;
     }
-    #tiger, #aguia, #brasileira {
+    .section {
       width: 100%;
-      height: 100%;
-      transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+      height: calc(100vh - 50px);
+      display: none;
+    }
+    .section.active {
+      display: block;
     }
     iframe {
       width: 100%;
       height: 100%;
       border: none;
-      display: block;
       border-radius: 10px;
     }
-    footer {
-      background: linear-gradient(135deg, #129e00, #129e00);
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      border-top: 2px solid #e0e6ec;
+
+    /* ── MENU FLUTUANTE ── */
+    .fab-container {
       position: fixed;
-      bottom: 0;
-      width: 100%;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .fab-main {
+      width: 60px;
       height: 60px;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
-      z-index: 10;
-      gap: 6px;
-    }
-    .footer-bar {
-      background: linear-gradient(135deg, #7bbdff, #1a3c5e);
-      height: 20px;
-      width: 100%;
-      position: fixed;
-      bottom: -20px;
-      z-index: 9;
-    }
-    footer .row {
+      background: #129e00;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      color: white;
+      font-size: 28px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      height: 48px;
-      gap: 4px;
-    }
-    footer button {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      font-size: 14px;
-      font-weight: 500;
-      color: #fff;
+      justify-content: center;
       cursor: pointer;
-      padding: 4px;
-      border-radius: 8px;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
+      border: none;
+    }
+    .fab-main:hover {
+      background: #0e7e00;
+      transform: scale(1.08);
+    }
+    .fab-menu {
+      position: absolute;
+      bottom: 80px;
+      right: 0;
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
+      gap: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .fab-menu.open {
+      opacity: 1;
+      visibility: visible;
+    }
+    .fab-item {
+      width: 56px;
+      height: 56px;
+      background: #129e00;
+      border-radius: 50%;
+      color: white;
+      font-size: 24px;
+      display: flex;
       align-items: center;
-      gap: 4px;
-      flex: 1;
       justify-content: center;
-      text-overflow: ellipsis;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .fab-item:hover {
+      background: #0e7e00;
+      transform: scale(1.1);
+    }
+    .fab-label {
+      margin-right: 16px;
+      background: rgba(0,0,0,0.75);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
       white-space: nowrap;
-      overflow: hidden;
+      opacity: 0;
+      transform: translateX(20px);
+      transition: all 0.3s ease;
+      pointer-events: none;
     }
-    footer button.selected {
-      background: rgba(255, 255, 255, 0.3);
-      font-weight: 600;
+    .fab-item:hover .fab-label {
+      opacity: 1;
+      transform: translateX(0);
     }
-    footer button img {
-      height: 28px;
-      width: 28px;
+    .fab-item img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      border-radius: 50%;
     }
-    footer button i {
-      font-size: 28px;
-    }
-    footer button:hover {
-      background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    footer button:active {
-      transform: scale(0.95);
-    }
+
     @media (max-width: 768px) {
       header {
         padding: 8px 15px;
@@ -166,99 +183,117 @@
       }
       #main-content {
         margin-top: 50px;
-        margin-bottom: 60px;
       }
-      footer {
-        padding: 6px;
-        height: 60px;
-        bottom: 0;
+      .fab-container {
+        bottom: 16px;
+        right: 16px;
       }
-      .footer-bar {
-        height: 20px;
-        bottom: -20px;
-      }
-      footer .row {
-        height: 40px;
-      }
-      footer button {
-        font-size: 12px;
-        padding: 4px;
-      }
-      footer button img {
-        height: 24px;
-        width: 24px;
-      }
-      footer button i {
+      .fab-main {
+        width: 56px;
+        height: 56px;
         font-size: 24px;
+      }
+      .fab-item {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+      }
+      .fab-item img {
+        width: 28px;
+        height: 28px;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="aguia.png" alt="Vivi JB Logo">
+    <img src="aguia.png" alt="Águia Logo">
     <h1>ÁGUIA OFICIAL</h1>
   </header>
 
   <div id="main-content">
-    <div id="tiger">
-        <iframe id="embeddedIframe" allow="clipboard-read; clipboard-write" src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" width="100%" height="600" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>
+    <div id="tiger" class="section active">
+      <iframe allow="clipboard-read; clipboard-write" src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>
     </div>
-    <div id="aguia" class="hidden">
-        <iframe allow="clipboard-read; clipboard-write" src="https://app.acertos.club/pr/JcsF2PpU" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
+    <div id="aguia" class="section">
+      <iframe allow="clipboard-read; clipboard-write" src="https://app.acertos.club/pr/JcsF2PpU" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
     </div>
-    <div id="brasileira" class="hidden">
-        <iframe allow="clipboard-read; clipboard-write" src="https://app.feiticeira.club/pr/2iCVbLKr" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
+    <div id="brasileira" class="section">
+      <iframe allow="clipboard-read; clipboard-write" src="https://app.feiticeira.club/pr/2iCVbLKr" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
     </div>
   </div>
 
-  <footer>
-    <div class="row">
-      <button onclick="mostrar('tiger')" class="selected">
-        <img src="aguia.png" alt="Tiger Club">
-        Águia
-      </button>
-      <button onclick="mostrar('aguia')">
-        <img src="acertos.png" alt="Águia Oficial">
-        Acertos
-      </button>
-      <button onclick="mostrar('brasileira')">
-        <img src="feiticeira.png" alt="feiticeira">
-        Feiticeira
-      </button>
-      <button onclick="mostrar('suporte')">
+  <!-- Menu Flutuante -->
+  <div class="fab-container">
+    <button class="fab-main" id="fabToggle">
+      <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="fab-menu" id="fabMenu">
+      <div class="fab-item" onclick="mostrar('brasileira')" title="Feiticeira">
+        <span class="fab-label">Feiticeira</span>
+        <img src="feiticeira.png" alt="Feiticeira">
+      </div>
+      
+      <div class="fab-item" onclick="mostrar('aguia')" title="Acertos">
+        <span class="fab-label">Acertos</span>
+        <img src="acertos.png" alt="Acertos">
+      </div>
+      
+      <div class="fab-item" onclick="mostrar('tiger')" title="Águia">
+        <span class="fab-label">Águia</span>
+        <img src="aguia.png" alt="Águia">
+      </div>
+      
+      <div class="fab-item" onclick="abrirSuporte()" title="Suporte">
+        <span class="fab-label">Suporte</span>
         <i class="fab fa-whatsapp"></i>
-        Suporte
-      </button>
+      </div>
     </div>
-  </footer>
-  <div class="footer-bar"></div>
+  </div>
 
   <script>
-    function mostrar(id) {
-      const sections = ['tiger', 'aguia', 'brasileira'];
-      if (id === 'suporte') {
-        window.open('https://wa.me/5583994073892?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21', '_blank');
-        return;
-      }
+    const fabToggle = document.getElementById('fabToggle');
+    const fabMenu = document.getElementById('fabMenu');
+    let menuOpen = false;
 
-      sections.forEach(sec => {
-        const el = document.getElementById(sec);
-        el.style.display = sec === id ? 'block' : 'none';
-      });
-
-      document.querySelectorAll('footer button').forEach(button => {
-        button.classList.remove('selected');
-        if (button.getAttribute('onclick') === `mostrar('${id}')`) {
-          button.classList.add('selected');
-        }
-      });
+    function toggleMenu() {
+      menuOpen = !menuOpen;
+      fabMenu.classList.toggle('open', menuOpen);
+      fabToggle.innerHTML = menuOpen 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-plus"></i>';
     }
 
+    fabToggle.addEventListener('click', toggleMenu);
+
+    // Fecha menu ao clicar fora
+    document.addEventListener('click', function(e) {
+      if (!fabToggle.contains(e.target) && !fabMenu.contains(e.target)) {
+        if (menuOpen) toggleMenu();
+      }
+    });
+
+    function mostrar(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => {
+        sec.classList.toggle('active', sec.id === id);
+      });
+
+      // Fecha menu após selecionar
+      if (menuOpen) toggleMenu();
+    }
+
+    function abrirSuporte() {
+      window.open('https://wa.me/5583994073892?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21', '_blank');
+      if (menuOpen) toggleMenu();
+    }
+
+    // Inicia na Águia
     document.addEventListener('DOMContentLoaded', () => {
       mostrar('tiger');
     });
   </script>
 </body>
 </html>
-
