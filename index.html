@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- SEO PRINCIPAL -->
-  <link rel="canonical" href="https://bancaaguiaoficial.com.br/" />
-  <title>Águia Oficial | Banca Online Confiável +25% Bônus</title>
-  <meta name="description" content="Acesse Águia Oficial, Acertos Club e Feiticeira em um só lugar. Banca online confiável, suporte rápido e bônus exclusivo." />
-  <meta name="robots" content="index, follow" />
+  <title> Águia Oficial - Apostas Ao Vivo e seguro</title>
+  <meta name="description" content="Banca online confiável para apostas e jogos ao vivo. Cadastre-se na Águia Oficial, receba bônus e acompanhe resultados em tempo real.">
+  <meta name="keywords" content="banca online, apostas online, site de apostas, banca de apostas, jogo online, banca confiável, águia oficial">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="Águia Oficial | Banca Online" />
-  <meta property="og:description" content="Resultados ao vivo e bônus exclusivo. Acesse agora." />
-  <meta property="og:url" content="https://bancaaguiaoficial.com.br/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://bancaaguiaoficial.com.br/og.jpg" />
+  <link rel="canonical" href="https://bancaaguiaoficial.com.br/">
+  <link rel="alternate" hreflang="pt-br" href="https://bancaaguiaoficial.com.br/">
 
-  <!-- SITEMAP -->
-  <link rel="sitemap" type="application/xml" href="https://bancaaguiaoficial.com.br/sitemap.xml">
+  <meta property="og:title" content="Banca Online Segura - Águia Oficial">
+  <meta property="og:description" content="Aposte com segurança na Águia Oficial. Plataforma rápida, confiável e com suporte ao vivo.">
+  <meta property="og:url" content="https://bancaaguiaoficial.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bancaaguiaoficial.com.br/og.jpg">
 
-  <!-- PERFORMANCE -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="aguia.png" type="image/png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="aguia.png">
 
-  <!-- GOOGLE ANALYTICS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -37,178 +36,197 @@
   </script>
 
   <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body,html{
-      font-family:'Roboto',sans-serif;
+    body{
+      font-family:Roboto,sans-serif;
+      margin:0;
       background:#f4f6f8;
-      height:100vh;
-      display:flex;
-      flex-direction:column;
       color:#1a1a1a;
       overflow:hidden;
     }
+    .section{display:none;height:100vh;}
+    .section.active{display:block;}
+    iframe{width:100%;height:100%;border:none;}
 
-    header{
-      background:#129e00;
-      display:flex;
-      align-items:center;
-      padding:10px 20px;
-      height:50px;
+    /* BOTÃO FLUTUANTE */
+    .fab-container{
       position:fixed;
-      top:0;
-      width:100%;
-      z-index:1000;
-      color:#fff;
-      font-weight:bold;
+      bottom:20px;
+      right:20px;
+      z-index:9999;
     }
-    header img{height:35px;margin-right:10px}
-
-    #main-content{
-      flex:1;
-      margin-top:50px;
-      display:flex;
-      flex-direction:column;
-    }
-
-    /* MENU VISÍVEL */
-    .menu-bancas{
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      padding:10px;
-      background:#fff;
-      border-bottom:1px solid #ddd;
-      position:sticky;
-      top:50px;
-      z-index:999;
-    }
-    .menu-bancas button{
-      padding:10px 18px;
-      border:none;
-      border-radius:8px;
+    .fab-main{
+      width:60px;
+      height:60px;
+      border-radius:50%;
       background:#129e00;
       color:#fff;
-      font-weight:bold;
-      cursor:pointer;
-      transition:.2s;
-    }
-    .menu-bancas button:hover{
-      background:#0e7e00;
-      transform:scale(1.05);
-    }
-
-    .section{
-      width:100%;
-      height:calc(100vh - 100px);
-      display:none;
-    }
-    .section.active{display:block}
-
-    iframe{
-      width:100%;
-      height:100%;
+      font-size:28px;
       border:none;
-      background:#fff;
+      cursor:pointer;
+      box-shadow:0 6px 15px rgba(0,0,0,.3);
     }
-
-    /* MENU FLUTUANTE */
-    .fab-container{position:fixed;bottom:20px;right:20px;z-index:1002}
-    .fab-main{
-      width:60px;height:60px;border-radius:50%;
-      background:#129e00;color:#fff;font-size:28px;
-      border:none;cursor:pointer;
-      box-shadow:0 4px 12px rgba(0,0,0,.3);
+    .fab-overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.2);
+      opacity:0;
+      visibility:hidden;
+      border:none;
     }
     .fab-menu{
-      position:absolute;bottom:80px;right:0;
-      display:flex;flex-direction:column;gap:12px;
-      opacity:0;pointer-events:none;transform:translateY(10px);
+      position:absolute;
+      bottom:75px;
+      right:0;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      opacity:0;
+      transform:translateY(10px);
+      pointer-events:none;
+    }
+    .fab-item{
+      width:55px;
+      height:55px;
+      border-radius:50%;
+      background:#129e00;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border:none;
+      cursor:pointer;
+      box-shadow:0 4px 10px rgba(0,0,0,.25);
+      text-decoration:none;
+      position:relative;
+    }
+    .fab-item img{
+      width:30px;
+      height:30px;
+    }
+    .fab-label{
+      position:absolute;
+      right:70px;
+      background:#000;
+      color:#fff;
+      padding:5px 10px;
+      border-radius:20px;
+      font-size:12px;
+      opacity:0;
       transition:.2s;
+      white-space:nowrap;
+    }
+    .fab-item:hover .fab-label{
+      opacity:1;
+    }
+    .fab-container.open .fab-overlay{
+      opacity:1;
+      visibility:visible;
     }
     .fab-container.open .fab-menu{
-      opacity:1;pointer-events:auto;transform:translateY(0);
+      opacity:1;
+      transform:translateY(0);
+      pointer-events:auto;
     }
-
-    /* botão/atalho lateral (serve para <a> e <button>) */
-    .fab-item{
-      width:55px;height:55px;border-radius:50%;
-      background:#129e00;color:#fff;
-      display:flex;align-items:center;justify-content:center;
-      border:none;cursor:pointer;
-      box-shadow:0 3px 10px rgba(0,0,0,.25);
-      text-decoration:none;
-      font-size:22px;
-    }
-    .fab-item:hover{background:#0e7e00}
   </style>
 </head>
-
 <body>
 
-<header>
-  <img src="aguia.png" alt="Águia Logo">
-  ÁGUIA OFICIAL
-</header>
+<!-- TEXTO SEO -->
+<section style="position:absolute;left:-9999px;top:-9999px;">
+  <h1>Banca Online Águia Oficial</h1>
+  <p>A Águia Oficial é uma banca online confiável para apostas esportivas e jogos ao vivo.</p>
+</section>
 
-<div id="main-content">
-
-  <!-- MENU VISÍVEL -->
-  <div class="menu-bancas">
-    <button onclick="mostrar('aguia')">🦅 Águia</button>
-    <button onclick="mostrar('acertos')">🎯 Acertos</button>
-    <button onclick="mostrar('feiticeira')">🔮 Feiticeira</button>
-  </div>
-
-  <div id="aguia" class="section active">
-    <iframe src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" loading="lazy"></iframe>
-  </div>
-
-  <div id="acertos" class="section">
-    <iframe src="https://app.acertos.club/pr/JcsF2PpU" loading="lazy"></iframe>
-  </div>
-
-  <div id="feiticeira" class="section">
-    <iframe src="https://app.feiticeira.club/pr/2iCVbLKr" loading="lazy"></iframe>
-  </div>
-
+<!-- IFRAMES COM PERMISSÕES DE CÓPIA -->
+<div id="aguia" class="section active">
+  <iframe 
+    src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
+    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write">
+  </iframe>
 </div>
 
-<!-- MENU FLUTUANTE (LATERAL) -->
+<div id="acertos" class="section">
+  <iframe 
+    src="https://app.acertos.club/pr/JcsF2PpU"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
+    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write">
+  </iframe>
+</div>
+
+<div id="feiticeira" class="section">
+  <iframe 
+    src="https://app.feiticeira.club/pr/2iCVbLKr"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
+    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write">
+  </iframe>
+</div>
+
+<!-- BOTÃO FLUTUANTE -->
 <div class="fab-container" id="fabRoot">
-  <button class="fab-main" id="fabToggle"><i class="fas fa-plus"></i></button>
+  <button class="fab-main" id="fabToggle">
+    <i class="fas fa-plus"></i>
+  </button>
 
-  <div class="fab-menu" id="fabMenu">
-    <!-- AGORA SÃO LINKS CLICÁVEIS -->
-    <a class="fab-item" href="https://app.aguiaoficial.com/pr/ZXbjMC6Q" target="_blank" rel="noopener noreferrer" title="Abrir Águia">🦅</a>
-    <a class="fab-item" href="https://app.acertos.club/pr/JcsF2PpU" target="_blank" rel="noopener noreferrer" title="Abrir Acertos">🎯</a>
-    <a class="fab-item" href="https://app.feiticeira.club/pr/2iCVbLKr" target="_blank" rel="noopener noreferrer" title="Abrir Feiticeira">🔮</a>
+  <button class="fab-overlay" id="fabOverlay"></button>
 
-    <a class="fab-item" href="https://wa.me/5583994073892" target="_blank" rel="noopener noreferrer" title="WhatsApp">💬</a>
+  <div class="fab-menu">
+    <button class="fab-item" data-target="aguia">
+      <span class="fab-label">Águia</span>
+      <img src="aguia.png">
+    </button>
+
+    <button class="fab-item" data-target="acertos">
+      <span class="fab-label">Acertos</span>
+      <img src="acertos.png">
+    </button>
+
+    <button class="fab-item" data-target="feiticeira">
+      <span class="fab-label">Feiticeira</span>
+      <img src="feiticeira.png">
+    </button>
+
+    <a class="fab-item" 
+   href="https://wa.me/5583993753199?text=Ol%C3%A1%20suporte%2C%20vim%20pelo%20site%20e%20preciso%20de%20ajuda"
+   target="_blank">
+  <span class="fab-label">Suporte</span>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
   </div>
 </div>
 
 <script>
-  function mostrar(id){
-    document.querySelectorAll('.section').forEach(sec=>{
-      sec.classList.toggle('active',sec.id===id);
+const fabRoot = document.getElementById("fabRoot");
+const fabToggle = document.getElementById("fabToggle");
+const fabOverlay = document.getElementById("fabOverlay");
+
+let open = false;
+
+function toggleMenu(state){
+  open = state;
+  fabRoot.classList.toggle("open", open);
+  fabToggle.innerHTML = open ? '<i class="fas fa-times"></i>' : '<i class="fas fa-plus"></i>';
+}
+
+fabToggle.onclick = () => toggleMenu(!open);
+fabOverlay.onclick = () => toggleMenu(false);
+
+document.querySelectorAll(".fab-item[data-target]").forEach(btn=>{
+  btn.onclick = () => {
+    const id = btn.dataset.target;
+    document.querySelectorAll(".section").forEach(s=>{
+      s.classList.toggle("active", s.id === id);
     });
-  }
-
-  const fabRoot=document.getElementById('fabRoot');
-  const fabToggle=document.getElementById('fabToggle');
-  fabToggle.onclick=()=>fabRoot.classList.toggle('open');
-
-  // ANTI-BOT BÁSICO
-  (function(){
-    let clicks=0;
-    document.addEventListener('click',()=>clicks++);
-    setInterval(()=>{
-      if(clicks>40){
-        document.body.innerHTML="<h1>Acesso bloqueado</h1>";
-      }
-      clicks=0;
-    },5000);
-  })();
+    toggleMenu(false);
+  };
+});
 </script>
 
 </body>
