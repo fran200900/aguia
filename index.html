@@ -6,7 +6,7 @@
 
   <!-- SEO PRINCIPAL -->
   <link rel="canonical" href="https://bancaaguiaoficial.com.br/" />
-  <title>Águia Oficial | Banca Online Confiável +30% Bônus</title>
+  <title>Águia Oficial | Banca Online Confiável +25% Bônus</title>
   <meta name="description" content="Acesse Águia Oficial, Acertos Club e Feiticeira em um só lugar. Banca online confiável, suporte rápido e bônus exclusivo." />
   <meta name="robots" content="index, follow" />
 
@@ -101,58 +101,12 @@
       width:100%;
       height:calc(100vh - 100px);
       display:none;
-      background:#fff;
     }
     .section.active{display:block}
 
-    /* NOVO: barra de link acima do iframe */
-    .link-bar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:10px 12px;
-      border-bottom:1px solid #e6e6e6;
-      background:#ffffff;
-    }
-    .link-bar .left{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      min-width:0;
-      flex:1;
-    }
-    .link-bar .label{
-      font-weight:700;
-      color:#129e00;
-      white-space:nowrap;
-    }
-    .link-bar a{
-      color:#0b66c3;
-      text-decoration:underline;
-      font-weight:500;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      white-space:nowrap;
-      display:block;
-      max-width:100%;
-    }
-    .link-bar .open-btn{
-      border:none;
-      border-radius:8px;
-      padding:10px 12px;
-      background:#129e00;
-      color:#fff;
-      font-weight:700;
-      cursor:pointer;
-      white-space:nowrap;
-    }
-    .link-bar .open-btn:hover{background:#0e7e00}
-
-    /* iframe agora desconta a altura da link-bar (~52px) */
     iframe{
       width:100%;
-      height:calc(100% - 52px);
+      height:100%;
       border:none;
       background:#fff;
     }
@@ -174,6 +128,8 @@
     .fab-container.open .fab-menu{
       opacity:1;pointer-events:auto;transform:translateY(0);
     }
+
+    /* botão/atalho lateral (serve para <a> e <button>) */
     .fab-item{
       width:55px;height:55px;border-radius:50%;
       background:#129e00;color:#fff;
@@ -181,7 +137,9 @@
       border:none;cursor:pointer;
       box-shadow:0 3px 10px rgba(0,0,0,.25);
       text-decoration:none;
+      font-size:22px;
     }
+    .fab-item:hover{background:#0e7e00}
   </style>
 </head>
 
@@ -202,63 +160,30 @@
   </div>
 
   <div id="aguia" class="section active">
-    <div class="link-bar">
-      <div class="left">
-        <span class="label">Águia:</span>
-        <a href="https://app.aguiaoficial.com/pr/ZXbjMC6Q" target="_blank" rel="noopener noreferrer">
-          https://app.aguiaoficial.com/pr/ZXbjMC6Q
-        </a>
-      </div>
-      <button class="open-btn" onclick="window.open('https://app.aguiaoficial.com/pr/ZXbjMC6Q','_blank')">
-        Abrir
-      </button>
-    </div>
     <iframe src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" loading="lazy"></iframe>
   </div>
 
   <div id="acertos" class="section">
-    <!-- LINK VISÍVEL (NOVO) -->
-    <div class="link-bar">
-      <div class="left">
-        <span class="label">Acertos:</span>
-        <a href="https://app.acertos.club/pr/JcsF2PpU" target="_blank" rel="noopener noreferrer">
-          https://app.acertos.club/pr/JcsF2PpU
-        </a>
-      </div>
-      <button class="open-btn" onclick="window.open('https://app.acertos.club/pr/JcsF2PpU','_blank')">
-        Abrir
-      </button>
-    </div>
     <iframe src="https://app.acertos.club/pr/JcsF2PpU" loading="lazy"></iframe>
   </div>
 
   <div id="feiticeira" class="section">
-    <!-- LINK VISÍVEL (NOVO) -->
-    <div class="link-bar">
-      <div class="left">
-        <span class="label">Feiticeira:</span>
-        <a href="https://app.feiticeira.club/pr/2iCVbLKr" target="_blank" rel="noopener noreferrer">
-          https://app.feiticeira.club/pr/2iCVbLKr
-        </a>
-      </div>
-      <button class="open-btn" onclick="window.open('https://app.feiticeira.club/pr/2iCVbLKr','_blank')">
-        Abrir
-      </button>
-    </div>
     <iframe src="https://app.feiticeira.club/pr/2iCVbLKr" loading="lazy"></iframe>
   </div>
 
 </div>
 
-<!-- MENU FLUTUANTE -->
+<!-- MENU FLUTUANTE (LATERAL) -->
 <div class="fab-container" id="fabRoot">
   <button class="fab-main" id="fabToggle"><i class="fas fa-plus"></i></button>
 
   <div class="fab-menu" id="fabMenu">
-    <button class="fab-item" onclick="mostrar('aguia')">🦅</button>
-    <button class="fab-item" onclick="mostrar('acertos')">🎯</button>
-    <button class="fab-item" onclick="mostrar('feiticeira')">🔮</button>
-    <a class="fab-item" href="https://wa.me/5583994073892" target="_blank" rel="noopener noreferrer">💬</a>
+    <!-- AGORA SÃO LINKS CLICÁVEIS -->
+    <a class="fab-item" href="https://app.aguiaoficial.com/pr/ZXbjMC6Q" target="_blank" rel="noopener noreferrer" title="Abrir Águia">🦅</a>
+    <a class="fab-item" href="https://app.acertos.club/pr/JcsF2PpU" target="_blank" rel="noopener noreferrer" title="Abrir Acertos">🎯</a>
+    <a class="fab-item" href="https://app.feiticeira.club/pr/2iCVbLKr" target="_blank" rel="noopener noreferrer" title="Abrir Feiticeira">🔮</a>
+
+    <a class="fab-item" href="https://wa.me/5583994073892" target="_blank" rel="noopener noreferrer" title="WhatsApp">💬</a>
   </div>
 </div>
 
