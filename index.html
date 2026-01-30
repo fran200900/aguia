@@ -4,57 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Canonical (SEO) -->
+  <!-- SEO PRINCIPAL -->
   <link rel="canonical" href="https://bancaaguiaoficial.com.br/" />
-
-  <!-- Título e descrição (SEO + CTR) -->
-  <title>Águia Oficial: Banca Online Confiável +30% Bônus | Ao Vivo</title>
-  <meta name="description" content="Aposte com segurança na Águia Oficial: resultados ao vivo, suporte rápido e +30% de bônus no cadastro. Acesse Águia oficial, Acertos Club e Feiticeira em um só lugar." />
+  <title>Águia Oficial | Banca Online Confiável +30% Bônus</title>
+  <meta name="description" content="Acesse Águia Oficial, Acertos Club e Feiticeira em um só lugar. Banca online confiável, suporte rápido e bônus exclusivo." />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (compartilhamento) -->
-  <meta property="og:title" content="Águia Oficial: Banca Online Confiável +30% Bônus" />
-  <meta property="og:description" content="Resultados ao vivo, suporte rápido e +30% de bônus no cadastro. Acesse Águia, Acertos e Feiticeira em um só lugar." />
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Águia Oficial | Banca Online" />
+  <meta property="og:description" content="Resultados ao vivo e bônus exclusivo. Acesse agora." />
   <meta property="og:url" content="https://bancaaguiaoficial.com.br/" />
   <meta property="og:type" content="website" />
-  <!-- Troque por uma imagem real (arquivo): /og.jpg ou /og.png -->
   <meta property="og:image" content="https://bancaaguiaoficial.com.br/og.jpg" />
 
-  <!-- Segurança adicional -->
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()" />
+  <!-- SITEMAP -->
+  <link rel="sitemap" type="application/xml" href="https://bancaaguiaoficial.com.br/sitemap.xml">
 
-  <!-- CSP mais restrito (compatível com scripts inline atuais) -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    base-uri 'self';
-    object-src 'none';
-    frame-ancestors 'self';
-    upgrade-insecure-requests;
-
-    img-src 'self' data: https:;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:;
-
-    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdnjs.cloudflare.com;
-
-    connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com;
-
-    frame-src https://app.aguiaoficial.com https://app.acertos.club https://app.feiticeira.club;
-  " />
-
-  <link rel="icon" href="aguia.png" type="image/png" />
-
-  <!-- Performance: preconnect -->
+  <!-- PERFORMANCE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- GOOGLE ANALYTICS -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -64,263 +37,254 @@
   </script>
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body, html {
-      font-family: 'Roboto', sans-serif;
-      background: #f4f6f8;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      color: #1a1a1a;
-      overflow-x: hidden;
+    *{box-sizing:border-box;margin:0;padding:0}
+    body,html{
+      font-family:'Roboto',sans-serif;
+      background:#f4f6f8;
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      color:#1a1a1a;
+      overflow:hidden;
     }
 
-    header {
-      background: linear-gradient(135deg, #129e00, #129e00);
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      height: 50px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
+    header{
+      background:#129e00;
+      display:flex;
+      align-items:center;
+      padding:10px 20px;
+      height:50px;
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:1000;
+      color:#fff;
+      font-weight:bold;
     }
-    header img { height: 35px; margin-right: 10px; transition: transform 0.3s ease; }
-    header img:hover { transform: rotate(10deg) scale(1.1); }
-    header h1 { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
+    header img{height:35px;margin-right:10px}
 
-    #main-content { flex: 1; margin-top: 50px; overflow-y: auto; }
-
-    .section { width: 100%; height: calc(100vh - 50px); display: none; }
-    .section.active { display: block; }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 10px;
-      background: #fff;
+    #main-content{
+      flex:1;
+      margin-top:50px;
+      display:flex;
+      flex-direction:column;
     }
 
-    /* ── MENU FLUTUANTE (FAB) ── */
-    .fab-container { position: fixed; bottom: 20px; right: 20px; z-index: 1002; }
+    /* MENU VISÍVEL */
+    .menu-bancas{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      padding:10px;
+      background:#fff;
+      border-bottom:1px solid #ddd;
+      position:sticky;
+      top:50px;
+      z-index:999;
+    }
+    .menu-bancas button{
+      padding:10px 18px;
+      border:none;
+      border-radius:8px;
+      background:#129e00;
+      color:#fff;
+      font-weight:bold;
+      cursor:pointer;
+      transition:.2s;
+    }
+    .menu-bancas button:hover{
+      background:#0e7e00;
+      transform:scale(1.05);
+    }
 
+    .section{
+      width:100%;
+      height:calc(100vh - 100px);
+      display:none;
+      background:#fff;
+    }
+    .section.active{display:block}
+
+    /* NOVO: barra de link acima do iframe */
+    .link-bar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:10px 12px;
+      border-bottom:1px solid #e6e6e6;
+      background:#ffffff;
+    }
+    .link-bar .left{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-width:0;
+      flex:1;
+    }
+    .link-bar .label{
+      font-weight:700;
+      color:#129e00;
+      white-space:nowrap;
+    }
+    .link-bar a{
+      color:#0b66c3;
+      text-decoration:underline;
+      font-weight:500;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      display:block;
+      max-width:100%;
+    }
+    .link-bar .open-btn{
+      border:none;
+      border-radius:8px;
+      padding:10px 12px;
+      background:#129e00;
+      color:#fff;
+      font-weight:700;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .link-bar .open-btn:hover{background:#0e7e00}
+
+    /* iframe agora desconta a altura da link-bar (~52px) */
+    iframe{
+      width:100%;
+      height:calc(100% - 52px);
+      border:none;
+      background:#fff;
+    }
+
+    /* MENU FLUTUANTE */
+    .fab-container{position:fixed;bottom:20px;right:20px;z-index:1002}
     .fab-main{
-      width: 60px; height: 60px; background: #129e00; border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      color: #fff; font-size: 28px;
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer; border: none;
-      transition: transform .25s ease, background .2s ease;
-      -webkit-tap-highlight-color: transparent;
-      user-select: none;
-      touch-action: manipulation;
+      width:60px;height:60px;border-radius:50%;
+      background:#129e00;color:#fff;font-size:28px;
+      border:none;cursor:pointer;
+      box-shadow:0 4px 12px rgba(0,0,0,.3);
     }
-    .fab-main:hover { background: #0e7e00; transform: scale(1.08); }
-
-    /* Overlay acima do iframe para evitar conflito de toque */
-    .fab-overlay{
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,0.25);
-      border: 0; padding: 0; margin: 0;
-      opacity: 0; visibility: hidden; pointer-events: none;
-      transition: opacity .2s ease, visibility .2s ease;
-      z-index: 1001;
-      -webkit-tap-highlight-color: transparent;
-      touch-action: manipulation;
-    }
-
     .fab-menu{
-      position: absolute; bottom: 80px; right: 0;
-      display: flex; flex-direction: column; align-items: flex-end; gap: 16px;
-
-      opacity: 0; visibility: hidden;
-      transform: translateY(10px) scale(0.98);
-      pointer-events: none;
-      transition: opacity .25s ease, visibility .25s ease, transform .25s ease;
+      position:absolute;bottom:80px;right:0;
+      display:flex;flex-direction:column;gap:12px;
+      opacity:0;pointer-events:none;transform:translateY(10px);
+      transition:.2s;
     }
-
-    .fab-container.open .fab-overlay { opacity: 1; visibility: visible; pointer-events: auto; }
-    .fab-container.open .fab-menu { opacity: 1; visibility: visible; transform: translateY(0) scale(1); pointer-events: auto; }
-    .fab-container.open .fab-main { transform: rotate(90deg) scale(1.08); }
-
+    .fab-container.open .fab-menu{
+      opacity:1;pointer-events:auto;transform:translateY(0);
+    }
     .fab-item{
-      width: 56px; height: 56px; background: #129e00; border-radius: 50%;
-      color: #fff; font-size: 24px;
-      display: inline-flex; align-items: center; justify-content: center;
-      cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-      transition: transform .2s ease, background .2s ease, opacity .2s ease;
-      text-decoration: none;
-      border: none; outline: none;
-      -webkit-tap-highlight-color: transparent;
-      user-select: none;
-      touch-action: manipulation;
-
-      opacity: 0;
-      transform: translateY(12px);
-    }
-    .fab-item:hover { background: #0e7e00; transform: scale(1.1); }
-
-    .fab-container.open .fab-item { opacity: 1; transform: translateY(0); }
-    .fab-container.open .fab-item:nth-child(1){ transition-delay: 0ms; }
-    .fab-container.open .fab-item:nth-child(2){ transition-delay: 60ms; }
-    .fab-container.open .fab-item:nth-child(3){ transition-delay: 120ms; }
-    .fab-container.open .fab-item:nth-child(4){ transition-delay: 180ms; }
-
-    .fab-label{
-      margin-right: 16px;
-      background: rgba(0,0,0,0.75);
-      color: #fff;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-      white-space: nowrap;
-      opacity: 0;
-      transform: translateX(20px);
-      transition: opacity .2s ease, transform .2s ease;
-      pointer-events: none;
-    }
-    .fab-item:focus .fab-label,
-    .fab-item:hover .fab-label{ opacity: 1; transform: translateX(0); }
-
-    .fab-item img{
-      width: 32px; height: 32px;
-      object-fit: contain; border-radius: 50%;
-      pointer-events: none;
-    }
-
-    @media (max-width: 768px){
-      header { padding: 8px 15px; }
-      header img { height: 30px; }
-      header h1 { font-size: 16px; }
-      .fab-container { bottom: 16px; right: 16px; }
-      .fab-main { width: 56px; height: 56px; font-size: 24px; }
-      .fab-item { width: 52px; height: 52px; font-size: 22px; }
-      .fab-item img { width: 28px; height: 28px; }
+      width:55px;height:55px;border-radius:50%;
+      background:#129e00;color:#fff;
+      display:flex;align-items:center;justify-content:center;
+      border:none;cursor:pointer;
+      box-shadow:0 3px 10px rgba(0,0,0,.25);
+      text-decoration:none;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <img src="aguia.png" alt="Águia Logo" />
-    <h1>ÁGUIA OFICIAL</h1>
-  </header>
 
-  <div id="main-content">
-    <div id="tiger" class="section active">
-      <iframe
-        src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="clipboard-read; clipboard-write"
-        sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>
-    </div>
+<header>
+  <img src="aguia.png" alt="Águia Logo">
+  ÁGUIA OFICIAL
+</header>
 
-    <div id="aguia" class="section">
-      <iframe
-        src="https://app.acertos.club/pr/JcsF2PpU"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="clipboard-read; clipboard-write"
-        sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-    </div>
+<div id="main-content">
 
-    <div id="brasileira" class="section">
-      <iframe
-        src="https://app.feiticeira.club/pr/2iCVbLKr"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="clipboard-read; clipboard-write"
-        sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-    </div>
+  <!-- MENU VISÍVEL -->
+  <div class="menu-bancas">
+    <button onclick="mostrar('aguia')">🦅 Águia</button>
+    <button onclick="mostrar('acertos')">🎯 Acertos</button>
+    <button onclick="mostrar('feiticeira')">🔮 Feiticeira</button>
   </div>
 
-  <!-- Menu Flutuante -->
-  <div class="fab-container" id="fabRoot">
-    <button class="fab-main" id="fabToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="fabMenu" type="button">
-      <i class="fas fa-plus"></i>
-    </button>
-
-    <button class="fab-overlay" id="fabOverlay" aria-label="Fechar menu" type="button"></button>
-
-    <div class="fab-menu" id="fabMenu" role="menu" aria-hidden="true">
-      <button class="fab-item" type="button" data-target="brasileira" role="menuitem" title="Feiticeira">
-        <span class="fab-label">Feiticeira</span>
-        <img src="feiticeira.png" alt="Feiticeira" />
+  <div id="aguia" class="section active">
+    <div class="link-bar">
+      <div class="left">
+        <span class="label">Águia:</span>
+        <a href="https://app.aguiaoficial.com/pr/ZXbjMC6Q" target="_blank" rel="noopener noreferrer">
+          https://app.aguiaoficial.com/pr/ZXbjMC6Q
+        </a>
+      </div>
+      <button class="open-btn" onclick="window.open('https://app.aguiaoficial.com/pr/ZXbjMC6Q','_blank')">
+        Abrir
       </button>
-
-      <button class="fab-item" type="button" data-target="aguia" role="menuitem" title="Acertos">
-        <span class="fab-label">Acertos</span>
-        <img src="acertos.png" alt="Acertos" />
-      </button>
-
-      <button class="fab-item" type="button" data-target="tiger" role="menuitem" title="Águia">
-        <span class="fab-label">Águia</span>
-        <img src="aguia.png" alt="Águia" />
-      </button>
-
-      <a class="fab-item"
-         href="https://wa.me/5583994073892?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21"
-         target="_blank" rel="noopener"
-         role="menuitem"
-         title="Suporte">
-        <span class="fab-label">Suporte</span>
-        <i class="fab fa-whatsapp"></i>
-      </a>
     </div>
+    <iframe src="https://app.aguiaoficial.com/pr/ZXbjMC6Q" loading="lazy"></iframe>
   </div>
 
-  <script>
-    const fabRoot = document.getElementById('fabRoot');
-    const fabToggle = document.getElementById('fabToggle');
-    const fabMenu = document.getElementById('fabMenu');
-    const fabOverlay = document.getElementById('fabOverlay');
+  <div id="acertos" class="section">
+    <!-- LINK VISÍVEL (NOVO) -->
+    <div class="link-bar">
+      <div class="left">
+        <span class="label">Acertos:</span>
+        <a href="https://app.acertos.club/pr/JcsF2PpU" target="_blank" rel="noopener noreferrer">
+          https://app.acertos.club/pr/JcsF2PpU
+        </a>
+      </div>
+      <button class="open-btn" onclick="window.open('https://app.acertos.club/pr/JcsF2PpU','_blank')">
+        Abrir
+      </button>
+    </div>
+    <iframe src="https://app.acertos.club/pr/JcsF2PpU" loading="lazy"></iframe>
+  </div>
 
-    let menuOpen = false;
+  <div id="feiticeira" class="section">
+    <!-- LINK VISÍVEL (NOVO) -->
+    <div class="link-bar">
+      <div class="left">
+        <span class="label">Feiticeira:</span>
+        <a href="https://app.feiticeira.club/pr/2iCVbLKr" target="_blank" rel="noopener noreferrer">
+          https://app.feiticeira.club/pr/2iCVbLKr
+        </a>
+      </div>
+      <button class="open-btn" onclick="window.open('https://app.feiticeira.club/pr/2iCVbLKr','_blank')">
+        Abrir
+      </button>
+    </div>
+    <iframe src="https://app.feiticeira.club/pr/2iCVbLKr" loading="lazy"></iframe>
+  </div>
 
-    function setMenu(open) {
-      menuOpen = !!open;
-      fabRoot.classList.toggle('open', menuOpen);
-      fabMenu.setAttribute('aria-hidden', String(!menuOpen));
-      fabToggle.setAttribute('aria-expanded', String(menuOpen));
-      fabToggle.innerHTML = menuOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-plus"></i>';
-    }
+</div>
 
-    function mostrar(id) {
-      document.querySelectorAll('.section').forEach(sec => {
-        sec.classList.toggle('active', sec.id === id);
-      });
-    }
+<!-- MENU FLUTUANTE -->
+<div class="fab-container" id="fabRoot">
+  <button class="fab-main" id="fabToggle"><i class="fas fa-plus"></i></button>
 
-    fabToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      setMenu(!menuOpen);
+  <div class="fab-menu" id="fabMenu">
+    <button class="fab-item" onclick="mostrar('aguia')">🦅</button>
+    <button class="fab-item" onclick="mostrar('acertos')">🎯</button>
+    <button class="fab-item" onclick="mostrar('feiticeira')">🔮</button>
+    <a class="fab-item" href="https://wa.me/5583994073892" target="_blank" rel="noopener noreferrer">💬</a>
+  </div>
+</div>
+
+<script>
+  function mostrar(id){
+    document.querySelectorAll('.section').forEach(sec=>{
+      sec.classList.toggle('active',sec.id===id);
     });
+  }
 
-    fabOverlay.addEventListener('click', (e) => {
-      e.preventDefault();
-      setMenu(false);
-    });
+  const fabRoot=document.getElementById('fabRoot');
+  const fabToggle=document.getElementById('fabToggle');
+  fabToggle.onclick=()=>fabRoot.classList.toggle('open');
 
-    fabMenu.addEventListener('click', (e) => {
-      const btn = e.target.closest('button[data-target]');
-      if (!btn) return;
-      mostrar(btn.getAttribute('data-target'));
-      setMenu(false);
-    });
+  // ANTI-BOT BÁSICO
+  (function(){
+    let clicks=0;
+    document.addEventListener('click',()=>clicks++);
+    setInterval(()=>{
+      if(clicks>40){
+        document.body.innerHTML="<h1>Acesso bloqueado</h1>";
+      }
+      clicks=0;
+    },5000);
+  })();
+</script>
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') setMenu(false);
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      mostrar('tiger');
-    });
-  </script>
 </body>
 </html>
