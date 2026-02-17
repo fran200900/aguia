@@ -3,30 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title> Águia Oficial - Apostas Ao Vivo e seguro</title>
+  <title> Águia Oficial - Apostas online 25% de bonus </title>
   <meta name="description" content="Banca online confiável para apostas e jogos ao vivo. Cadastre-se na Águia Oficial, receba bônus e acompanhe resultados em tempo real.">
-  <meta name="keywords" content="banca online, apostas online, site de apostas, banca de apostas, jogo online, banca confiável, águia oficial">
+  <meta name="keywords" content="banca de jogos online, apostas online, site de apostas, banca de apostas, jogo online, banca confiável, águia oficial">
   <meta name="robots" content="index, follow, max-image-preview:large">
-
   <link rel="canonical" href="https://bancaaguiaoficial.com.br/">
   <link rel="alternate" hreflang="pt-br" href="https://bancaaguiaoficial.com.br/">
-
   <meta property="og:title" content="Banca Online Segura - Águia Oficial">
   <meta property="og:description" content="Aposte com segurança na Águia Oficial. Plataforma rápida, confiável e com suporte ao vivo.">
   <meta property="og:url" content="https://bancaaguiaoficial.com.br/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://bancaaguiaoficial.com.br/og.jpg">
-
   <link rel="icon" href="aguia.png" type="image/png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="aguia.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,112 +27,115 @@
     gtag('js', new Date());
     gtag('config', 'G-70QZPPYYF7');
   </script>
-
   <style>
-    body{
-      font-family:Roboto,sans-serif;
-      margin:0;
-      background:#f4f6f8;
-      color:#1a1a1a;
-      overflow:hidden;
+    body {
+      font-family: Roboto, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #1a1a1a;
+      overflow: hidden;
     }
-    .section{display:none;height:100vh;}
-    .section.active{display:block;}
-    iframe{width:100%;height:100%;border:none;}
+    .section { display: none; height: 100vh; }
+    .section.active { display: block; }
+    iframe { width: 100%; height: 100%; border: none; }
 
-    /* BOTÃO FLUTUANTE */
-    .fab-container{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      z-index:9999;
+    /* BOTÃO FLUTUANTE - SÓ WHATSAPP */
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
     }
-    .fab-main{
-      width:60px;
-      height:60px;
-      border-radius:50%;
-      background:#129e00;
-      color:#fff;
-      font-size:28px;
-      border:none;
-      cursor:pointer;
-      box-shadow:0 6px 15px rgba(0,0,0,.3);
+    .fab-main {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      font-size: 32px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0,0,0,.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .fab-overlay{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.2);
-      opacity:0;
-      visibility:hidden;
-      border:none;
+    .fab-label {
+      position: absolute;
+      right: 80px;
+      background: #000;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      opacity: 0;
+      transition: .2s;
+      white-space: nowrap;
+      pointer-events: none;
     }
-    .fab-menu{
-      position:absolute;
-      bottom:75px;
-      right:0;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      opacity:0;
-      transform:translateY(10px);
-      pointer-events:none;
+    .fab-main:hover .fab-label {
+      opacity: 1;
     }
-    .fab-item{
-      width:55px;
-      height:55px;
-      border-radius:50%;
-      background:#129e00;
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border:none;
-      cursor:pointer;
-      box-shadow:0 4px 10px rgba(0,0,0,.25);
-      text-decoration:none;
-      position:relative;
+
+    /* BANNER PROMOTOR */
+    .promo-banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(90deg, #ff2d55, #ff9500);
+      color: white;
+      padding: 14px 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      z-index: 9998;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      animation: pulse 2s infinite;
     }
-    .fab-item img{
-      width:30px;
-      height:30px;
+    .promo-banner:hover {
+      background: linear-gradient(90deg, #ff3b5e, #ffa116);
     }
-    .fab-label{
-      position:absolute;
-      right:70px;
-      background:#000;
-      color:#fff;
-      padding:5px 10px;
-      border-radius:20px;
-      font-size:12px;
-      opacity:0;
-      transition:.2s;
-      white-space:nowrap;
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
     }
-    .fab-item:hover .fab-label{
-      opacity:1;
+    .promo-banner span {
+      font-size: 22px;
     }
-    .fab-container.open .fab-overlay{
-      opacity:1;
-      visibility:visible;
-    }
-    .fab-container.open .fab-menu{
-      opacity:1;
-      transform:translateY(0);
-      pointer-events:auto;
+    @media (max-width: 600px) {
+      .promo-banner {
+        font-size: 16px;
+        padding: 12px 15px;
+      }
+      .promo-banner span {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
-
 <!-- TEXTO SEO -->
 <section style="position:absolute;left:-9999px;top:-9999px;">
   <h1>Banca Online Águia Oficial</h1>
   <p>A Águia Oficial é uma banca online confiável para apostas esportivas e jogos ao vivo.</p>
 </section>
 
-<!-- IFRAMES COM PERMISSÕES DE CÓPIA -->
+<!-- BANNER PROMOTOR -->
+<a href="https://wa.me/5583993753199?text=Ol%C3%A1%2C%20quero%20ser%20um%20promotor%2C%20como%20fa%C3%A7o%3F" 
+   target="_blank" class="promo-banner">
+  <span>🔥</span> QUER SE TORNAR PROMOTOR E FATURAR DE CASA? <span>CLIQUE AQUI E SAIBA MAIS! 🔥</span>
+</a>
+
+<!-- CONTEÚDO PRINCIPAL (só Águia por padrão) -->
 <div id="aguia" class="section active">
-  <iframe 
+  <iframe
     src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
@@ -148,86 +144,14 @@
   </iframe>
 </div>
 
-<div id="acertos" class="section">
-  <iframe 
-    src="https://app.acertos.club/pr/JcsF2PpU"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
-    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write">
-  </iframe>
+<!-- BOTÃO FLUTUANTE APENAS WHATSAPP -->
+<div class="fab-container">
+  <a href="https://wa.me/5583993753199?text=Ol%C3%A1%20suporte%2C%20vim%20pelo%20site%20e%20preciso%20de%20ajuda"
+     target="_blank" class="fab-main">
+    <i class="fab fa-whatsapp"></i>
+    <span class="fab-label">Suporte</span>
+  </a>
 </div>
-
-<div id="feiticeira" class="section">
-  <iframe 
-    src="https://app.feiticeira.club/pr/2iCVbLKr"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
-    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write">
-  </iframe>
-</div>
-
-<!-- BOTÃO FLUTUANTE -->
-<div class="fab-container" id="fabRoot">
-  <button class="fab-main" id="fabToggle">
-    <i class="fas fa-plus"></i>
-  </button>
-
-  <button class="fab-overlay" id="fabOverlay"></button>
-
-  <div class="fab-menu">
-    <button class="fab-item" data-target="aguia">
-      <span class="fab-label">Águia</span>
-      <img src="aguia.png">
-    </button>
-
-    <button class="fab-item" data-target="acertos">
-      <span class="fab-label">Acertos</span>
-      <img src="acertos.png">
-    </button>
-
-    <button class="fab-item" data-target="feiticeira">
-      <span class="fab-label">Feiticeira</span>
-      <img src="feiticeira.png">
-    </button>
-
-    <a class="fab-item" 
-   href="https://wa.me/5583993753199?text=Ol%C3%A1%20suporte%2C%20vim%20pelo%20site%20e%20preciso%20de%20ajuda"
-   target="_blank">
-  <span class="fab-label">Suporte</span>
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-  </div>
-</div>
-
-<script>
-const fabRoot = document.getElementById("fabRoot");
-const fabToggle = document.getElementById("fabToggle");
-const fabOverlay = document.getElementById("fabOverlay");
-
-let open = false;
-
-function toggleMenu(state){
-  open = state;
-  fabRoot.classList.toggle("open", open);
-  fabToggle.innerHTML = open ? '<i class="fas fa-times"></i>' : '<i class="fas fa-plus"></i>';
-}
-
-fabToggle.onclick = () => toggleMenu(!open);
-fabOverlay.onclick = () => toggleMenu(false);
-
-document.querySelectorAll(".fab-item[data-target]").forEach(btn=>{
-  btn.onclick = () => {
-    const id = btn.dataset.target;
-    document.querySelectorAll(".section").forEach(s=>{
-      s.classList.toggle("active", s.id === id);
-    });
-    toggleMenu(false);
-  };
-});
-</script>
 
 </body>
 </html>
