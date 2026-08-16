@@ -1,72 +1,509 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Águia Oficial - Apostas Online com 25% de Bônus</title>
-<meta name="description" content="Banca online confiável para apostas esportivas e jogos ao vivo.">
-<link rel="icon" href="aguia.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-:root{--primary:#25D366;}
-*{box-sizing:border-box}
-body{font-family:Roboto,sans-serif;margin:0;background:#f4f6f8;overflow:hidden;height:100dvh}
-.section{height:100dvh;position:relative}
-.iframe-placeholder{position:absolute;inset:0;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;z-index:2;transition:.4s}
-.spinner{width:48px;height:48px;border:5px solid rgba(255,255,255,.2);border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hidden{opacity:0;pointer-events:none}
-iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
-.promo-banner{position:fixed;top:0;left:0;right:0;background:#ff9800;color:#fff;text-align:center;padding:10px;text-decoration:none;font-weight:bold;z-index:1000}
-.fab-container{position:fixed;right:20px;bottom:20px;z-index:1000}
-.fab-main{background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;display:flex;gap:8px;align-items:center}
-.cotacao-modal{position:fixed;inset:0;display:flex;justify-content:center;align-items:center;z-index:999999}
-.cotacao-overlay{position:absolute;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(3px)}
-.cotacao-box{position:relative;z-index:2;max-width:420px;width:90%}
-.cotacao-img{width:100%;display:block;border-radius:16px;box-shadow:0 15px 40px rgba(0,0,0,.45)}
-.cotacao-close{position:absolute;top:-14px;right:-14px;width:36px;height:36px;border:none;border-radius:50%;font-size:24px;cursor:pointer}
-</style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO PRINCIPAL -->
+    <title>Águia Oficial - Apostas Online com 25% de Bônus</title>
+
+    <meta name="description" content="Águia Oficial: banca online para apostas esportivas e jogos ao vivo. Confira as opções disponíveis e aproveite 25% de bônus.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- URL PRINCIPAL DO SITE -->
+    <link rel="canonical" href="https://bancaaguiaoficial.com.br/">
+
+    <!-- Idioma e tema -->
+    <meta name="language" content="pt-BR">
+    <meta name="theme-color" content="#25D366">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="aguia.png" type="image/png">
+    <link rel="apple-touch-icon" href="aguia.png">
+
+    <!-- OPEN GRAPH / WHATSAPP / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Águia Oficial - Apostas Online com 25% de Bônus">
+    <meta property="og:description" content="Acesse a Águia Oficial e confira as opções de apostas esportivas e jogos ao vivo. Aproveite 25% de bônus.">
+    <meta property="og:url" content="https://bancaaguiaoficial.com.br/">
+    <meta property="og:site_name" content="Águia Oficial">
+    <meta property="og:image" content="https://bancaaguiaoficial.com.br/aguia.png">
+    <meta property="og:image:alt" content="Águia Oficial">
+
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Águia Oficial - Apostas Online com 25% de Bônus">
+    <meta name="twitter:description" content="Acesse a Águia Oficial e confira as opções de apostas esportivas e jogos ao vivo.">
+    <meta name="twitter:image" content="https://bancaaguiaoficial.com.br/aguia.png">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- FONTES -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <style>
+        :root {
+            --primary: #25D366;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: Roboto, sans-serif;
+            background: #f4f6f8;
+            overflow: hidden;
+            height: 100dvh;
+        }
+
+        .section {
+            position: relative;
+            width: 100%;
+            height: 100dvh;
+        }
+
+        /* TELA DE CARREGAMENTO */
+        .iframe-placeholder {
+            position: absolute;
+            inset: 0;
+            background: #1a1a1a;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            z-index: 2;
+
+            opacity: 1;
+            visibility: visible;
+
+            transition:
+                opacity .4s ease,
+                visibility .4s ease;
+        }
+
+        .iframe-placeholder.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+
+            border: 5px solid rgba(255,255,255,.2);
+            border-top-color: #fff;
+
+            border-radius: 50%;
+
+            animation: spin 1s linear infinite;
+
+            margin-bottom: 16px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* IFRAME */
+        iframe {
+            position: absolute;
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            border: none;
+
+            display: block;
+        }
+
+        /* BANNER SUPERIOR */
+        .promo-banner {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            background: #ff9800;
+            color: #fff;
+
+            text-align: center;
+
+            padding: 10px;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            z-index: 1000;
+
+            transition: opacity .2s ease;
+        }
+
+        .promo-banner:hover {
+            opacity: .92;
+        }
+
+        /* BOTÃO WHATSAPP */
+        .fab-container {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            z-index: 1000;
+        }
+
+        .fab-main {
+            background: var(--primary);
+            color: #fff;
+
+            padding: 14px 18px;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+
+            display: flex;
+
+            gap: 8px;
+
+            align-items: center;
+
+            font-weight: 500;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,.25);
+
+            transition:
+                transform .2s ease,
+                opacity .2s ease;
+        }
+
+        .fab-main:hover {
+            transform: translateY(-2px);
+            opacity: .95;
+        }
+
+        /* MODAL */
+        .cotacao-modal {
+            position: fixed;
+
+            inset: 0;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 999999;
+        }
+
+        .cotacao-overlay {
+            position: absolute;
+
+            inset: 0;
+
+            background: rgba(0,0,0,.65);
+
+            backdrop-filter: blur(3px);
+        }
+
+        .cotacao-box {
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 420px;
+
+            width: 90%;
+        }
+
+        .cotacao-img {
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+            border-radius: 16px;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,.45);
+        }
+
+        .cotacao-close {
+            position: absolute;
+
+            top: -14px;
+            right: -14px;
+
+            width: 36px;
+            height: 36px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #fff;
+
+            color: #222;
+
+            font-size: 24px;
+
+            line-height: 36px;
+
+            cursor: pointer;
+
+            z-index: 3;
+
+            box-shadow: 0 3px 10px rgba(0,0,0,.3);
+        }
+
+        .cotacao-close:hover {
+            background: #f1f1f1;
+        }
+
+        /* ACESSIBILIDADE */
+        .sr-only {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+
+            padding: 0;
+            margin: -1px;
+
+            overflow: hidden;
+
+            clip: rect(0, 0, 0, 0);
+
+            white-space: nowrap;
+
+            border: 0;
+        }
+
+        /* CELULAR */
+        @media (max-width: 600px) {
+
+            .promo-banner {
+                font-size: 13px;
+                padding: 9px 8px;
+            }
+
+            .fab-container {
+                right: 14px;
+                bottom: 14px;
+            }
+
+            .fab-main {
+                padding: 13px 16px;
+            }
+
+            .cotacao-box {
+                width: 88%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div id="cotacao-modal" class="cotacao-modal">
-<div class="cotacao-overlay" onclick="fecharCotacao()"></div>
-<div class="cotacao-box">
-<button class="cotacao-close" onclick="fecharCotacao()">&times;</button>
-<a href="https://superacertos.com.br/" target="_blank">
-<img src="cotação.png" class="cotacao-img" alt="Cotação">
-</a>
-</div>
-</div>
+    <!-- MODAL DE COTAÇÃO -->
+    <div
+        id="cotacao-modal"
+        class="cotacao-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Oferta e cotação"
+    >
 
-<a href="https://wa.me/5583993523067?text=Ol%C3%A1%2C%20quero%20ser%20um%20promotor" class="promo-banner">🔥 QUER SE TORNAR PROMOTOR? CLIQUE AQUI! 🔥</a>
+        <div
+            class="cotacao-overlay"
+            onclick="fecharCotacao()"
+            aria-hidden="true"
+        ></div>
 
-<div class="section">
-<div id="placeholder" class="iframe-placeholder">
-<div class="spinner"></div>
-<div>Carregando Águia Oficial...</div>
-</div>
-<iframe id="main-iframe"
-src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
-allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
-sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write">
-</iframe>
-</div>
+        <div class="cotacao-box">
 
-<div class="fab-container">
-<a class="fab-main" href="https://wa.me/5583993523067?text=Ol%C3%A1%20suporte"><i class="fab fa-whatsapp"></i><span>Suporte</span></a>
-</div>
+            <button
+                type="button"
+                class="cotacao-close"
+                onclick="fecharCotacao()"
+                aria-label="Fechar"
+            >
+                &times;
+            </button>
 
-<script>
-const iframe=document.getElementById("main-iframe");
-const placeholder=document.getElementById("placeholder");
-iframe.addEventListener("load",()=>{placeholder.classList.add("hidden");setTimeout(()=>placeholder.style.display="none",400)});
-setTimeout(()=>placeholder.classList.add("hidden"),8000);
-function fecharCotacao(){document.getElementById("cotacao-modal").style.display="none";}
-</script>
+            <a
+                href="https://superacertos.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="cotação.png"
+                    class="cotacao-img"
+                    alt="Confira a cotação da Águia Oficial"
+                    width="420"
+                    height="auto"
+                >
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- BANNER PROMOTOR -->
+    <a
+        href="https://wa.me/5583993523067?text=Ol%C3%A1%2C%20quero%20ser%20um%20promotor"
+        class="promo-banner"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Quero me tornar promotor"
+    >
+        🔥 QUER SE TORNAR PROMOTOR? CLIQUE AQUI! 🔥
+    </a>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="section">
+
+        <!-- CARREGAMENTO -->
+        <div
+            id="placeholder"
+            class="iframe-placeholder"
+            aria-label="Carregando Águia Oficial"
+        >
+
+            <div
+                class="spinner"
+                aria-hidden="true"
+            ></div>
+
+            <div>
+                Carregando Águia Oficial...
+            </div>
+
+        </div>
+
+
+        <!-- PLATAFORMA -->
+        <iframe
+            id="main-iframe"
+            src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
+            title="Águia Oficial - Plataforma de apostas"
+            allow="clipboard-read; clipboard-write; fullscreen; autoplay; encrypted-media"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-clipboard-read allow-clipboard-write"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="eager"
+        ></iframe>
+
+    </main>
+
+
+    <!-- BOTÃO WHATSAPP -->
+    <div class="fab-container">
+
+        <a
+            class="fab-main"
+            href="https://wa.me/5583993523067?text=Ol%C3%A1%20suporte"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Falar com o suporte pelo WhatsApp"
+        >
+
+            <i
+                class="fab fa-whatsapp"
+                aria-hidden="true"
+            ></i>
+
+            <span>
+                Suporte
+            </span>
+
+        </a>
+
+    </div>
+
+
+    <script>
+        const iframe = document.getElementById("main-iframe");
+        const placeholder = document.getElementById("placeholder");
+        const modal = document.getElementById("cotacao-modal");
+
+
+        /* ESCONDE O LOADING QUANDO O IFRAME CARREGAR */
+        iframe.addEventListener("load", function () {
+
+            placeholder.classList.add("hidden");
+
+            setTimeout(function () {
+                placeholder.style.display = "none";
+            }, 450);
+
+        });
+
+
+        /* FALLBACK CASO O IFRAME DEMORE */
+        setTimeout(function () {
+
+            placeholder.classList.add("hidden");
+
+            setTimeout(function () {
+                placeholder.style.display = "none";
+            }, 450);
+
+        }, 8000);
+
+
+        /* FECHAR MODAL */
+        function fecharCotacao() {
+
+            if (modal) {
+                modal.style.display = "none";
+            }
+
+        }
+
+
+        /* FECHAR MODAL COM ESC */
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+                fecharCotacao();
+            }
+
+        });
+    </script>
 
 </body>
 </html>
