@@ -7,74 +7,77 @@
 
   <title>Águia Oficial | Apostas Esportivas e Jogos Online</title>
 
-  <meta name="description"
-        content="Conheça a Águia Oficial, plataforma online de apostas esportivas e jogos. Acesse a plataforma, confira as opções disponíveis e consulte as regras e condições antes de utilizar os serviços.">
+  <meta name="description" content="Acesse a Águia Oficial e conheça nossa plataforma de apostas esportivas e jogos online. Consulte as opções disponíveis, informações da plataforma e canais de atendimento.">
 
-  <meta name="robots"
-        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-  <meta name="author" content="Águia Oficial">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
   <link rel="canonical" href="https://bancaaguiaoficial.com.br/">
 
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="/aguia.png">
+  <meta name="theme-color" content="#111111">
 
-  <!-- OPEN GRAPH -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Águia Oficial | Apostas Esportivas e Jogos Online">
-  <meta property="og:description"
-        content="Acesse a Águia Oficial e conheça as opções disponíveis de apostas esportivas e jogos online.">
+  <meta property="og:description" content="Conheça a plataforma Águia Oficial, com opções de apostas esportivas e jogos online.">
   <meta property="og:url" content="https://bancaaguiaoficial.com.br/">
-  <meta property="og:site_name" content="Águia Oficial">
   <meta property="og:image" content="https://bancaaguiaoficial.com.br/aguia.png">
 
-  <!-- TWITTER -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Águia Oficial | Apostas Esportivas e Jogos Online">
-  <meta name="twitter:description"
-        content="Conheça a plataforma Águia Oficial e confira as opções disponíveis online.">
-  <meta name="twitter:image"
-        content="https://bancaaguiaoficial.com.br/aguia.png">
+  <meta name="twitter:description" content="Conheça a plataforma Águia Oficial e suas opções de apostas esportivas e jogos online.">
+  <meta name="twitter:image" content="https://bancaaguiaoficial.com.br/aguia.png">
 
-  <meta name="theme-color" content="#111111">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/aguia.png">
 
-  <!-- DADOS ESTRUTURADOS: WEBSITE -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-70QZPPYYF7');
+  </script>
+
+  <!-- Dados estruturados -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Águia Oficial",
-    "alternateName": "Banca Águia Oficial",
     "url": "https://bancaaguiaoficial.com.br/",
-    "inLanguage": "pt-BR",
-    "description": "Site da Águia Oficial com informações sobre a plataforma online, apostas esportivas e jogos disponíveis."
+    "description": "Plataforma online com informações e acesso a apostas esportivas e jogos online."
   }
   </script>
 
-  <!-- DADOS ESTRUTURADOS: WEBPAGE -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Águia Oficial | Apostas Esportivas e Jogos Online",
     "url": "https://bancaaguiaoficial.com.br/",
-    "description": "Página da Águia Oficial com informações sobre a plataforma online, apostas esportivas e jogos.",
-    "inLanguage": "pt-BR",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Águia Oficial",
-      "url": "https://bancaaguiaoficial.com.br/"
-    }
+    "description": "Página oficial da Águia Oficial com informações sobre apostas esportivas, jogos online e acesso à plataforma."
   }
   </script>
 
   <style>
+
+    /* ==============================
+       RESET
+    ============================== */
+
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -83,9 +86,15 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b0b0b;
+      background: #0d0d0d;
       color: #ffffff;
       line-height: 1.6;
+      padding-bottom: 190px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
 
     a {
@@ -93,298 +102,445 @@
       text-decoration: none;
     }
 
-    /* HEADER */
+
+    /* ==============================
+       HEADER
+    ============================== */
+
     header {
       background: #111111;
       border-bottom: 1px solid #292929;
-      padding: 24px 16px;
+      padding: 18px 20px;
+      position: relative;
+      z-index: 10;
     }
 
     .header-container {
-      max-width: 1100px;
-      margin: auto;
-    }
+      width: 100%;
+      max-width: 1150px;
+      margin: 0 auto;
 
-    .brand {
-      font-size: 28px;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    .brand span {
-      color: #f5a400;
-    }
-
-    .subtitle {
-      color: #cccccc;
-      font-size: 15px;
-      max-width: 850px;
-    }
-
-    /* MENU */
-    nav {
-      background: #151515;
-      border-bottom: 1px solid #292929;
-    }
-
-    .nav-container {
-      max-width: 1100px;
-      margin: auto;
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 10px 16px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
-    .nav-container a {
-      padding: 8px 12px;
-      color: #dddddd;
-      font-size: 14px;
-      border-radius: 6px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 700;
     }
 
-    .nav-container a:hover {
-      background: #252525;
+    .logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
       color: #ffffff;
+      font-size: 15px;
+      transition: opacity 0.2s ease;
     }
 
-    /* CONTEÚDO SEO */
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero {
+      width: 100%;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+
+    /* ==============================
+       CONTEÚDO
+    ============================== */
+
     main {
       width: 100%;
     }
 
     .content {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 16px;
-    }
-
-    .intro {
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 34px;
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-
-    h2 {
-      font-size: 25px;
-      margin-bottom: 12px;
-    }
-
-    h3 {
-      font-size: 19px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      color: #d7d7d7;
-      font-size: 16px;
-      margin-bottom: 15px;
+      width: 100%;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
     .section {
-      margin-bottom: 35px;
+      margin: 35px 0;
     }
+
+    .section h2 {
+      font-size: 27px;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      color: #cfcfcf;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+
+    /* ==============================
+       CARDS
+    ============================== */
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 20px;
+      gap: 18px;
+      margin-top: 25px;
     }
 
     .card {
-      background: #151515;
+      background: #171717;
       border: 1px solid #292929;
-      border-radius: 10px;
-      padding: 20px;
+      border-radius: 12px;
+      padding: 24px;
     }
 
     .card h3 {
-      color: #ffffff;
+      font-size: 19px;
+      margin-bottom: 10px;
     }
 
     .card p {
-      font-size: 14px;
-      margin-bottom: 0;
+      margin: 0;
+      font-size: 15px;
     }
 
-    /* BOTÃO */
-    .access-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 13px 22px;
-      background: #f5a400;
-      color: #111111;
-      font-weight: bold;
-      border-radius: 7px;
-      transition: 0.2s;
+
+    /* ==============================
+       PLATAFORMA
+    ============================== */
+
+    .platform-section {
+      width: 100%;
+      margin-top: 40px;
     }
 
-    .access-button:hover {
-      transform: translateY(-1px);
-      opacity: 0.9;
-    }
-
-    /* IFRAME */
     .platform-title {
-      margin-bottom: 12px;
-    }
-
-    .iframe-wrapper {
       width: 100%;
-      background: #000000;
-      border: 1px solid #292929;
-      border-radius: 10px;
-      overflow: hidden;
-      min-height: 720px;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 20px 18px;
     }
 
-    .iframe-wrapper iframe {
+    .platform-title h2 {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .platform-title p {
+      color: #bbbbbb;
+      font-size: 15px;
+    }
+
+    .iframe-container {
       width: 100%;
-      height: 720px;
-      border: 0;
-      display: block;
-      background: #000000;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
-    /* AVISO */
-    .notice {
+    .iframe-box {
+      width: 100%;
+      min-height: 700px;
       background: #151515;
-      border-left: 4px solid #f5a400;
-      padding: 18px;
-      margin-top: 25px;
-      border-radius: 5px;
+      border: 1px solid #292929;
+      border-radius: 12px;
+      overflow: hidden;
     }
 
-    .notice p {
-      margin-bottom: 0;
-      font-size: 14px;
+    .iframe-box iframe {
+      display: block;
+      width: 100%;
+      height: 700px;
+      border: 0;
+      background: #ffffff;
     }
 
-    /* FAQ */
+
+    /* ==============================
+       FAQ
+    ============================== */
+
     .faq {
-      border-top: 1px solid #292929;
+      margin-top: 35px;
     }
 
     .faq-item {
-      padding: 18px 0;
-      border-bottom: 1px solid #292929;
+      background: #171717;
+      border: 1px solid #292929;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 12px;
     }
 
     .faq-item h3 {
+      font-size: 18px;
       margin-bottom: 8px;
     }
 
     .faq-item p {
-      margin-bottom: 0;
+      margin: 0;
+      color: #c6c6c6;
+      font-size: 15px;
     }
 
-    /* FOOTER */
-    footer {
-      background: #080808;
-      border-top: 1px solid #292929;
-      padding: 35px 16px;
-      margin-top: 20px;
+
+    /* ==============================
+       AVISO
+    ============================== */
+
+    .disclaimer {
+      max-width: 1150px;
+      margin: 40px auto 0;
+      padding: 0 20px;
     }
 
-    .footer-container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .footer-title {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .footer-text {
-      font-size: 14px;
+    .disclaimer-box {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 10px;
+      padding: 20px;
       color: #aaaaaa;
+      font-size: 14px;
     }
 
-    .copyright {
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid #222222;
-      color: #777777;
-      font-size: 13px;
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    footer {
+      background: #111111;
+      border-top: 1px solid #292929;
+      margin-top: 50px;
+      padding: 30px 20px;
+      text-align: center;
     }
 
-    /* WHATSAPP */
+    footer h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      color: #999999;
+      font-size: 14px;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+
+    /* ==============================
+       BANNER SUPER ACERTOS
+    ============================== */
+
+    .superacertos-banner {
+      position: fixed;
+
+      left: 50%;
+      bottom: 12px;
+
+      transform: translateX(-50%);
+
+      width: min(700px, calc(100% - 30px));
+
+      z-index: 9998;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+
+      background: #111111;
+
+      border: 1px solid #333333;
+
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.65);
+
+      transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+    }
+
+    .superacertos-banner a {
+      display: block;
+      width: 100%;
+    }
+
+    .superacertos-banner img {
+      display: block;
+
+      width: 100%;
+      height: auto;
+
+      max-height: 180px;
+
+      object-fit: cover;
+    }
+
+    .superacertos-close {
+      position: absolute;
+
+      top: 7px;
+      right: 7px;
+
+      width: 30px;
+      height: 30px;
+
+      border: 0;
+
+      border-radius: 50%;
+
+      background: rgba(0, 0, 0, 0.78);
+
+      color: #ffffff;
+
+      font-size: 22px;
+
+      line-height: 28px;
+
+      cursor: pointer;
+
+      z-index: 2;
+    }
+
+    .superacertos-close:hover {
+      background: #000000;
+    }
+
+    .superacertos-banner.fechado {
+      opacity: 0;
+
+      pointer-events: none;
+
+      transform: translate(-50%, 40px);
+    }
+
+
+    /* ==============================
+       WHATSAPP
+    ============================== */
+
     .whatsapp {
       position: fixed;
-      right: 18px;
-      bottom: 18px;
-      width: 58px;
-      height: 58px;
-      background: #25D366;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 54px;
+      height: 54px;
+
+      border-radius: 50%;
+
+      background: #25d366;
+
       color: #ffffff;
-      border-radius: 50%;
+
       display: flex;
+
       align-items: center;
       justify-content: center;
+
       font-size: 25px;
-      font-weight: bold;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+
       z-index: 9999;
+
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     }
 
-    /* MODAL */
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.85);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      z-index: 10000;
+    .whatsapp:hover {
+      transform: scale(1.06);
     }
 
-    .modal.active {
-      display: flex;
-    }
 
-    .modal-content {
-      position: relative;
-      max-width: 500px;
-      width: 100%;
-    }
+    /* ==============================
+       MOBILE
+    ============================== */
 
-    .modal-content img {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-    }
-
-    .close-modal {
-      position: absolute;
-      top: -12px;
-      right: -12px;
-      width: 35px;
-      height: 35px;
-      border: 0;
-      border-radius: 50%;
-      background: #ffffff;
-      color: #000000;
-      font-size: 22px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    /* MOBILE */
     @media (max-width: 768px) {
 
-      h1 {
-        font-size: 28px;
+      body {
+        padding-bottom: 150px;
       }
 
-      h2 {
+      header {
+        padding: 14px 15px;
+      }
+
+      .header-container {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 35px 15px 25px;
+      }
+
+      .hero h1 {
+        font-size: 29px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .content {
+        padding: 0 15px;
+      }
+
+      .section h2 {
         font-size: 23px;
       }
 
@@ -392,350 +548,494 @@
         grid-template-columns: 1fr;
       }
 
-      .iframe-wrapper {
-        min-height: 650px;
+      .iframe-container {
+        padding: 0 10px;
       }
 
-      .iframe-wrapper iframe {
-        height: 650px;
+      .iframe-box {
+        border-radius: 8px;
+        min-height: 600px;
       }
 
-      .nav-container {
-        overflow-x: auto;
-        flex-wrap: nowrap;
+      .iframe-box iframe {
+        height: 600px;
       }
 
-      .nav-container a {
-        white-space: nowrap;
+      .platform-title {
+        padding: 0 15px 15px;
+      }
+
+      .platform-title h2 {
+        font-size: 23px;
+      }
+
+      .superacertos-banner {
+        width: calc(100% - 20px);
+        bottom: 10px;
+      }
+
+      .superacertos-banner img {
+        max-height: 130px;
+      }
+
+      .superacertos-close {
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .whatsapp {
+        right: 12px;
+        bottom: 155px;
+        width: 50px;
+        height: 50px;
       }
     }
+
+
+    /* ==============================
+       TELAS MUITO PEQUENAS
+    ============================== */
+
+    @media (max-width: 400px) {
+
+      nav {
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 25px;
+      }
+
+      .iframe-box iframe {
+        height: 550px;
+      }
+
+      .superacertos-banner img {
+        max-height: 110px;
+      }
+    }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- CABEÇALHO -->
+
+  <!-- ==============================
+       HEADER
+  ============================== -->
+
   <header>
+
     <div class="header-container">
 
-      <div class="brand">
-        Águia <span>Oficial</span>
-      </div>
+      <a href="/" class="logo" aria-label="Águia Oficial">
 
-      <p class="subtitle">
-        Plataforma online de apostas esportivas e jogos. Conheça as opções
-        disponíveis e acesse a plataforma para consultar as condições de uso.
-      </p>
+        <img
+          src="/aguia.png"
+          alt="Águia Oficial"
+          width="48"
+          height="48"
+        >
+
+        <span>Águia Oficial</span>
+
+      </a>
+
+
+      <nav aria-label="Navegação principal">
+
+        <a href="#sobre">
+          Sobre
+        </a>
+
+        <a href="#apostas">
+          Apostas
+        </a>
+
+        <a href="#jogos">
+          Jogos
+        </a>
+
+        <a href="#plataforma">
+          Plataforma
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+      </nav>
 
     </div>
+
   </header>
 
 
-  <!-- NAVEGAÇÃO -->
-  <nav aria-label="Navegação principal">
-    <div class="nav-container">
 
-      <a href="#inicio">Início</a>
-
-      <a href="#sobre">Sobre</a>
-
-      <a href="#apostas">Apostas esportivas</a>
-
-      <a href="#jogos">Jogos</a>
-
-      <a href="#plataforma">Plataforma</a>
-
-      <a href="#faq">Perguntas frequentes</a>
-
-    </div>
-  </nav>
-
+  <!-- ==============================
+       CONTEÚDO PRINCIPAL
+  ============================== -->
 
   <main>
 
-    <!-- INTRODUÇÃO -->
-    <section id="inicio" class="content intro">
+
+    <!-- HERO -->
+
+    <section class="hero">
 
       <h1>
-        Águia Oficial - Apostas Esportivas e Jogos Online
+        Águia Oficial: apostas esportivas e jogos online
       </h1>
 
       <p>
-        A Águia Oficial é uma plataforma online voltada para usuários
-        interessados em apostas esportivas e jogos disponíveis pela internet.
-        Nesta página você pode conhecer melhor a plataforma e acessar o
-        ambiente online.
-      </p>
-
-      <p>
-        Antes de utilizar qualquer serviço, confira as regras, condições,
-        requisitos de participação e demais informações apresentadas na
-        própria plataforma.
-      </p>
-
-      <a class="access-button" href="#plataforma">
-        Acessar a plataforma
-      </a>
-
-    </section>
-
-
-    <!-- SOBRE -->
-    <section id="sobre" class="content section">
-
-      <h2>
-        Sobre a Águia Oficial
-      </h2>
-
-      <p>
-        A Águia Oficial disponibiliza um ambiente online onde os usuários
-        podem consultar diferentes opções de entretenimento e apostas
-        esportivas.
-      </p>
-
-      <p>
-        A proposta desta página é facilitar o acesso à plataforma e reunir
-        informações básicas para quem deseja conhecer o serviço antes de
-        utilizá-lo.
-      </p>
-
-      <div class="cards">
-
-        <article class="card">
-          <h3>Apostas esportivas</h3>
-
-          <p>
-            Consulte as opções esportivas disponíveis na plataforma e
-            verifique as condições aplicáveis antes de realizar qualquer
-            aposta.
-          </p>
-        </article>
-
-
-        <article class="card">
-          <h3>Jogos online</h3>
-
-          <p>
-            A plataforma disponibiliza diferentes opções de jogos online.
-            A disponibilidade pode variar de acordo com as condições e
-            regras apresentadas no ambiente.
-          </p>
-        </article>
-
-
-        <article class="card">
-          <h3>Acesso online</h3>
-
-          <p>
-            O acesso à plataforma é realizado pela internet por meio do
-            ambiente disponibilizado abaixo nesta página.
-          </p>
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- APOSTAS -->
-    <section id="apostas" class="content section">
-
-      <h2>
-        Apostas esportivas
-      </h2>
-
-      <p>
-        As apostas esportivas permitem que o usuário encontre eventos
-        esportivos disponíveis e consulte as opções oferecidas pela
-        plataforma.
-      </p>
-
-      <p>
-        As modalidades, mercados, cotações e condições podem variar.
-        Por isso, é importante verificar as informações apresentadas no
-        momento da utilização do serviço.
+        Conheça a plataforma Águia Oficial e confira as opções
+        disponíveis de apostas esportivas e jogos online.
+        Acesse a plataforma, consulte as informações disponíveis
+        e utilize os canais de atendimento quando necessário.
       </p>
 
     </section>
 
 
-    <!-- JOGOS -->
-    <section id="jogos" class="content section">
 
-      <h2>
-        Jogos online
-      </h2>
-
-      <p>
-        Além das opções relacionadas a esportes, a plataforma pode apresentar
-        diferentes jogos online. A disponibilidade dos jogos pode mudar ao
-        longo do tempo.
-      </p>
-
-      <p>
-        Consulte sempre as informações exibidas na plataforma antes de
-        participar de qualquer atividade.
-      </p>
-
-    </section>
+    <div class="content">
 
 
-    <!-- PLATAFORMA -->
-    <section id="plataforma" class="content section">
+      <!-- SOBRE -->
 
-      <h2 class="platform-title">
-        Acesse a plataforma Águia Oficial
-      </h2>
+      <section class="section" id="sobre">
 
-      <p>
-        Utilize o ambiente abaixo para acessar a plataforma e consultar as
-        opções atualmente disponíveis.
-      </p>
-
-      <div class="iframe-wrapper">
-
-        <iframe
-          src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
-          title="Plataforma Águia Oficial - Apostas esportivas e jogos online"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="fullscreen; autoplay; clipboard-write"
-          sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-        ></iframe>
-
-      </div>
-
-      <div class="notice">
+        <h2>
+          Sobre a Águia Oficial
+        </h2>
 
         <p>
-          <strong>Importante:</strong>
-          consulte as regras, condições e requisitos apresentados na
-          plataforma antes de utilizar qualquer serviço. As opções e
-          condições disponíveis podem ser alteradas.
+          A Águia Oficial disponibiliza uma plataforma online para
+          usuários que desejam conhecer opções de apostas esportivas
+          e jogos online.
+        </p>
+
+        <p>
+          Nesta página você pode acessar a plataforma, conhecer
+          informações gerais sobre os serviços disponíveis e encontrar
+          os principais canais de acesso.
+        </p>
+
+      </section>
+
+
+
+      <!-- CARDS -->
+
+      <section class="cards" aria-label="Principais opções">
+
+        <article class="card">
+
+          <h3>
+            Apostas esportivas
+          </h3>
+
+          <p>
+            Confira as opções esportivas disponíveis na plataforma
+            e consulte as informações apresentadas antes de realizar
+            qualquer operação.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Jogos online
+          </h3>
+
+          <p>
+            A plataforma também disponibiliza opções de jogos online.
+            Consulte as regras e condições de cada modalidade.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Plataforma online
+          </h3>
+
+          <p>
+            Acesse a plataforma diretamente nesta página para
+            consultar as opções e informações atualmente disponíveis.
+          </p>
+
+        </article>
+
+      </section>
+
+
+
+      <!-- APOSTAS -->
+
+      <section class="section" id="apostas">
+
+        <h2>
+          Apostas esportivas
+        </h2>
+
+        <p>
+          As apostas esportivas permitem acompanhar diferentes
+          modalidades e eventos disponíveis na plataforma.
+        </p>
+
+        <p>
+          Antes de utilizar qualquer serviço, confira as regras,
+          condições, mercados disponíveis e demais informações
+          apresentadas na plataforma.
+        </p>
+
+      </section>
+
+
+
+      <!-- JOGOS -->
+
+      <section class="section" id="jogos">
+
+        <h2>
+          Jogos online
+        </h2>
+
+        <p>
+          A Águia Oficial também apresenta opções de jogos online.
+          A disponibilidade pode variar de acordo com a plataforma
+          e com as condições apresentadas no momento do acesso.
+        </p>
+
+        <p>
+          Leia sempre as informações e regras correspondentes a cada
+          modalidade antes de utilizar qualquer serviço.
+        </p>
+
+      </section>
+
+    </div>
+
+
+
+    <!-- ==============================
+         PLATAFORMA / IFRAME
+    ============================== -->
+
+    <section class="platform-section" id="plataforma">
+
+      <div class="platform-title">
+
+        <h2>
+          Acesse a plataforma Águia Oficial
+        </h2>
+
+        <p>
+          Utilize o painel abaixo para acessar as opções disponíveis
+          na plataforma.
         </p>
 
       </div>
 
+
+      <div class="iframe-container">
+
+        <div class="iframe-box">
+
+          <iframe
+            src="https://app.aguiaoficial.com/pr/ZXbjMC6Q"
+            title="Plataforma Águia Oficial - Apostas esportivas e jogos online"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="fullscreen; autoplay; clipboard-write"
+            sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
+
+        </div>
+
+      </div>
+
     </section>
 
 
-    <!-- FAQ -->
-    <section id="faq" class="content section">
 
-      <h2>
-        Perguntas frequentes sobre a Águia Oficial
-      </h2>
+    <div class="content">
 
-      <div class="faq">
 
-        <div class="faq-item">
+      <!-- FAQ -->
+
+      <section class="faq section" id="faq">
+
+        <h2>
+          Perguntas frequentes
+        </h2>
+
+
+        <article class="faq-item">
 
           <h3>
             O que é a Águia Oficial?
           </h3>
 
           <p>
-            É uma plataforma online que disponibiliza opções relacionadas
-            a apostas esportivas e jogos pela internet.
+            A Águia Oficial é uma plataforma online que apresenta
+            opções de apostas esportivas e jogos online.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="faq-item">
+        <article class="faq-item">
 
           <h3>
             Como acessar a plataforma?
           </h3>
 
           <p>
-            O acesso pode ser realizado diretamente pelo ambiente da
-            plataforma incorporado nesta página.
+            O acesso pode ser realizado pelo painel da plataforma
+            disponibilizado nesta página.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="faq-item">
+        <article class="faq-item">
 
           <h3>
-            Quais esportes estão disponíveis?
+            Quais modalidades estão disponíveis?
           </h3>
 
           <p>
-            A disponibilidade de esportes e mercados pode variar. Consulte
-            diretamente a plataforma para verificar as opções disponíveis
-            no momento do acesso.
+            As modalidades e opções disponíveis podem variar.
+            Consulte diretamente a plataforma para verificar
+            as opções atuais.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="faq-item">
+        <article class="faq-item">
 
           <h3>
-            Existem regras e condições para utilização?
+            É importante verificar as regras?
           </h3>
 
           <p>
-            Sim. Antes de utilizar qualquer serviço, consulte as regras,
-            condições e requisitos apresentados na própria plataforma.
+            Sim. Antes de utilizar qualquer modalidade, leia as
+            regras, condições e informações apresentadas na plataforma.
           </p>
 
-        </div>
+        </article>
+
+      </section>
 
 
-        <div class="faq-item">
+    </div>
 
-          <h3>
-            As opções disponíveis podem mudar?
-          </h3>
 
-          <p>
-            Sim. Eventos, jogos, mercados e demais opções podem mudar de
-            acordo com a disponibilidade da plataforma.
-          </p>
 
-        </div>
+    <!-- AVISO -->
+
+    <section class="disclaimer">
+
+      <div class="disclaimer-box">
+
+        <strong>Importante:</strong>
+
+        As informações apresentadas nesta página têm caráter
+        informativo. Antes de utilizar qualquer serviço, consulte
+        as regras, condições e informações disponíveis na plataforma.
+        Utilize serviços de apostas de forma responsável e somente
+        quando permitido pela legislação aplicável.
 
       </div>
 
     </section>
 
+
   </main>
 
 
-  <!-- RODAPÉ -->
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+
   <footer>
 
-    <div class="footer-container">
+    <h2>
+      Águia Oficial
+    </h2>
 
-      <div class="footer-title">
-        Águia Oficial
-      </div>
+    <p>
+      Apostas esportivas e jogos online. Consulte sempre as
+      informações, regras e condições apresentadas na plataforma.
+    </p>
 
-      <p class="footer-text">
-        A Águia Oficial é uma plataforma online com opções relacionadas a
-        apostas esportivas e jogos. Consulte sempre as regras, condições e
-        requisitos aplicáveis antes de utilizar qualquer serviço.
-      </p>
-
-      <p class="footer-text">
-        Este site apresenta informações e acesso à plataforma. A
-        disponibilidade de produtos, jogos, eventos e demais opções pode
-        variar.
-      </p>
-
-      <div class="copyright">
-        © 2026 Águia Oficial. Todos os direitos reservados.
-      </div>
-
-    </div>
+    <p style="margin-top: 12px;">
+      © 2026 Águia Oficial. Todos os direitos reservados.
+    </p>
 
   </footer>
 
 
-  <!-- WHATSAPP -->
+
+  <!-- ==============================
+       BANNER SUPER ACERTOS
+  ============================== -->
+
+  <div
+    class="superacertos-banner"
+    id="superAcertosBanner"
+  >
+
+    <button
+      class="superacertos-close"
+      type="button"
+      onclick="fecharBanner()"
+      aria-label="Fechar banner"
+      title="Fechar"
+    >
+      ×
+    </button>
+
+
+    <a
+      href="https://superacertos.com.br/"
+      target="_blank"
+      rel="sponsored nofollow noopener"
+      aria-label="Acessar Super Acertos"
+    >
+
+      <img
+        src="/cotação.png"
+        alt="Super Acertos - Confira as opções disponíveis"
+        loading="lazy"
+      >
+
+    </a>
+
+  </div>
+
+
+
+  <!-- ==============================
+       WHATSAPP
+  ============================== -->
+
   <a
     class="whatsapp"
     href="https://wa.me/SEUNUMERO"
@@ -748,76 +1048,26 @@
   </a>
 
 
-  <!-- MODAL -->
-  <div class="modal" id="promoModal" aria-hidden="true">
 
-    <div class="modal-content">
-
-      <button
-        class="close-modal"
-        type="button"
-        aria-label="Fechar"
-        onclick="closeModal()"
-      >
-        ×
-      </button>
-
-      <a
-        href="https://superacertos.com.br/"
-        target="_blank"
-        rel="sponsored nofollow noopener"
-      >
-
-        <img
-          src="/cotação.png"
-          alt="Confira a promoção disponível"
-          loading="lazy"
-        >
-
-      </a>
-
-    </div>
-
-  </div>
-
+  <!-- ==============================
+       JAVASCRIPT
+  ============================== -->
 
   <script>
-    /*
-      O modal não abre automaticamente.
-      Isso evita esconder o conteúdo principal da página
-      assim que o visitante entra.
-    */
 
-    function openModal() {
-      const modal = document.getElementById("promoModal");
+    function fecharBanner() {
 
-      modal.classList.add("active");
-      modal.setAttribute("aria-hidden", "false");
-    }
+      const banner =
+        document.getElementById("superAcertosBanner");
 
-    function closeModal() {
-      const modal = document.getElementById("promoModal");
-
-      modal.classList.remove("active");
-      modal.setAttribute("aria-hidden", "true");
-    }
-
-    document.addEventListener("keydown", function(event) {
-
-      if (event.key === "Escape") {
-        closeModal();
+      if (banner) {
+        banner.classList.add("fechado");
       }
 
-    });
+    }
 
-    document.getElementById("promoModal").addEventListener("click", function(event) {
-
-      if (event.target === this) {
-        closeModal();
-      }
-
-    });
   </script>
+
 
 </body>
 </html>
