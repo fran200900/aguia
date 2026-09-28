@@ -311,100 +311,110 @@
     }
 
     /* ==================================================
-       BANNER SUPER ACERTOS - LARGURA TOTAL DA TELA
-       ================================================== */
+   BANNER SUPER ACERTOS
+   ================================================== */
 
-    .superacertos-banner {
-      position: fixed;
+.superacertos-banner {
+  position: fixed;
+  left: 0;
+  bottom: 0;
 
-      left: 0;
-      bottom: 0;
+  width: 80vw;
+  max-width: 100vw;
 
-      width: 80vw;
-      max-width: 100vw;
+  margin: 0;
+  padding: 0;
 
-      margin: 100;
-      padding: 0;
+  z-index: 99998;
 
-      z-index: 9998;
+  background: #111111;
+  border: 0;
+  border-top: 1px solid #333333;
+  border-radius: 0;
 
-      background: #111111;
+  overflow: visible;
 
-      border: 0;
-      border-top: 1px solid #333333;
-      border-radius: 0;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.65);
 
-      overflow: hidden;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
 
-      box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.65);
+.superacertos-banner a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-      transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
-    }
+.superacertos-banner img {
+  display: block;
 
-    .superacertos-banner a {
-      display: block;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
+  width: 100%;
+  max-width: 100%;
 
-    .superacertos-banner img {
-      display: block;
+  height: 800px;
+  max-height: none;
 
-      width: 100%;
-      max-width: 100%;
+  margin: 0;
+  padding: 0;
 
-      height: 800px;
-      max-height: none;
+  object-fit: contain;
+}
 
-      margin: 0;
-      padding: 0;
+/* BOTÃO X — sempre por cima do banner */
+.superacertos-close {
+  position: absolute !important;
 
-      object-fit: contain;
-    }
+  top: 10px !important;
+  right: 10px !important;
 
-    /* BOTÃO FECHAR */
+  z-index: 99999 !important;
 
-    .superacertos-close {
-      position: absolute;
+  width: 38px !important;
+  height: 38px !important;
 
-      top: 8px;
-      right: 10px;
+  margin: 0 !important;
+  padding: 0 !important;
 
-      z-index: 10;
+  border: 2px solid #ffffff !important;
+  border-radius: 50% !important;
 
-      width: 32px;
-      height: 32px;
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #ffffff !important;
 
-      border: 0;
-      border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 28px !important;
+  font-weight: bold !important;
+  line-height: 34px !important;
+  text-align: center !important;
 
-      background: rgba(0, 0, 0, 0.75);
-      color: #ffffff;
+  cursor: pointer !important;
 
-      font-size: 24px;
-      line-height: 32px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-      cursor: pointer;
+  appearance: none !important;
+  -webkit-appearance: none !important;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+}
 
-    .superacertos-close:hover {
-      background: rgba(0, 0, 0, 0.95);
-    }
+.superacertos-close:hover,
+.superacertos-close:active {
+  background: #000000 !important;
+  transform: scale(1.05);
+}
 
-    .superacertos-banner.fechado {
-      opacity: 0;
-      transform: translateY(100%);
-      pointer-events: none;
-    }
+.superacertos-banner.fechado {
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+}
 
-    /* WHATSAPP */
+/* WHATSAPP */
 
     .whatsapp {
       position: fixed;
@@ -473,12 +483,12 @@
       }
 
       .superacertos-close {
-        width: 30px;
-        height: 30px;
-        font-size: 22px;
-        line-height: 30px;
-        top: 5px;
-        right: 7px;
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 25px !important;
+        line-height: 30px !important;
+        top: 7px !important;
+        right: 7px !important;
       }
 
       .whatsapp {
@@ -526,10 +536,12 @@
       }
 
       .superacertos-close {
-        width: 28px;
-        height: 28px;
-        font-size: 20px;
-        line-height: 28px;
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 24px !important;
+        line-height: 28px !important;
+        top: 6px !important;
+        right: 6px !important;
       }
 
       .whatsapp {
@@ -921,15 +933,25 @@
   <script>
 
     function fecharBanner() {
-
-      const banner =
-        document.getElementById("superAcertosBanner");
+      const banner = document.getElementById("superAcertosBanner");
 
       if (banner) {
         banner.classList.add("fechado");
       }
-
     }
+
+    // Garante que o X funcione mesmo em navegadores com comportamentos diferentes
+    document.addEventListener("DOMContentLoaded", function () {
+      const botaoFechar = document.querySelector(".superacertos-close");
+
+      if (botaoFechar) {
+        botaoFechar.addEventListener("click", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          fecharBanner();
+        });
+      }
+    });
 
   </script>
 
