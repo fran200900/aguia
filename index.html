@@ -1,134 +1,212 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
+    <!-- ===== TÍTULO E DESCRIÇÃO ===== -->
     <title>Águia Oficial | Banca Águia Oficial e App Águia Oficial</title>
+    <meta name="description" content="Acesse a Águia Oficial, conheça a Banca Águia Oficial e use o aplicativo pelo celular ou computador. Entre, cadastre-se e comece agora. Conteúdo +18.">
+    <meta name="keywords" content="águia oficial, aguia oficial, banca águia oficial, banca aguia oficial, app águia oficial, aplicativo águia oficial, bancaaguiaoficial">
 
-    <meta name="description" content="Acesse a Águia Oficial, conheça a Banca Águia Oficial e utilize o aplicativo pelo celular ou computador.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="author" content="Águia Oficial">
-    <meta name="theme-color" content="#171717">
-
-    <!-- CANONICAL -->
+    <!-- ===== CANONICAL E IDIOMA ===== -->
     <link rel="canonical" href="https://bancaaguiaoficial.com.br/">
+    <link rel="alternate" hreflang="pt-BR" href="https://bancaaguiaoficial.com.br/">
+    <link rel="alternate" hreflang="x-default" href="https://bancaaguiaoficial.com.br/">
+    <meta http-equiv="content-language" content="pt-BR">
+    <meta name="geo.region" content="BR">
 
-    <!-- CONEXÃO ANTECIPADA COM O APLICATIVO -->
+    <!-- ===== INDEXAÇÃO ===== -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    <meta name="author" content="Águia Oficial">
+    <meta name="application-name" content="Águia Oficial">
+    <meta name="apple-mobile-web-app-title" content="Águia Oficial">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- ===== APARÊNCIA ===== -->
+    <meta name="theme-color" content="#171717">
+    <meta name="color-scheme" content="dark">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ===== DESEMPENHO ===== -->
     <link rel="preconnect" href="https://app.aguiaoficial.vip" crossorigin>
     <link rel="dns-prefetch" href="//app.aguiaoficial.vip">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
-    <!-- OPEN GRAPH -->
+    <!-- ===== OPEN GRAPH ===== -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Águia Oficial">
-    <meta property="og:title" content="Águia Oficial | Banca Águia Oficial">
-    <meta property="og:description" content="Acesse a plataforma digital Águia Oficial pelo celular ou computador.">
+    <meta property="og:title" content="Águia Oficial | Banca Águia Oficial e App">
+    <meta property="og:description" content="Acesse a plataforma digital Águia Oficial pelo celular ou computador. +18.">
     <meta property="og:url" content="https://bancaaguiaoficial.com.br/">
     <meta property="og:image" content="https://bancaaguiaoficial.com.br/aguia.png">
+    <meta property="og:image:secure_url" content="https://bancaaguiaoficial.com.br/aguia.png">
     <meta property="og:image:alt" content="Águia Oficial">
 
-    <!-- TWITTER -->
+    <!-- ===== TWITTER / X ===== -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Águia Oficial | App Águia Oficial">
-    <meta name="twitter:description" content="Acesse a plataforma digital Águia Oficial.">
+    <meta name="twitter:title" content="Águia Oficial | Banca Águia Oficial e App">
+    <meta name="twitter:description" content="Acesse a plataforma digital Águia Oficial pelo celular ou computador. +18.">
     <meta name="twitter:image" content="https://bancaaguiaoficial.com.br/aguia.png">
+    <meta name="twitter:image:alt" content="Águia Oficial">
 
-    <!-- FAVICON E PWA -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- ===== ÍCONES E PWA (os arquivos precisam existir na raiz do site) ===== -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="apple-touch-icon" href="/aguia.png">
     <link rel="manifest" href="/manifest.json">
 
-    <!-- DADOS ESTRUTURADOS -->
+    <!-- ===== DADOS ESTRUTURADOS ===== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Águia Oficial",
-        "url": "https://bancaaguiaoficial.com.br/",
-        "logo": "https://bancaaguiaoficial.com.br/aguia.png"
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://bancaaguiaoficial.com.br/#organization",
+                "name": "Águia Oficial",
+                "url": "https://bancaaguiaoficial.com.br/",
+                "logo": "https://bancaaguiaoficial.com.br/aguia.png"
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://bancaaguiaoficial.com.br/#website",
+                "url": "https://bancaaguiaoficial.com.br/",
+                "name": "Águia Oficial",
+                "inLanguage": "pt-BR",
+                "publisher": { "@id": "https://bancaaguiaoficial.com.br/#organization" }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://bancaaguiaoficial.com.br/#webpage",
+                "url": "https://bancaaguiaoficial.com.br/",
+                "name": "Águia Oficial | Banca Águia Oficial e App Águia Oficial",
+                "description": "Acesse a Águia Oficial, conheça a Banca Águia Oficial e use o aplicativo pelo celular ou computador.",
+                "inLanguage": "pt-BR",
+                "isPartOf": { "@id": "https://bancaaguiaoficial.com.br/#website" },
+                "about": { "@id": "https://bancaaguiaoficial.com.br/#organization" }
+            }
+        ]
     }
     </script>
 
-    <!-- GOOGLE ANALYTICS -->
+    <!-- ===== GOOGLE ANALYTICS ===== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-70QZPPYYF7"></script>
-
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-70QZPPYYF7');
     </script>
 
-    <!-- ESTILIZAÇÃO OTIMIZADA -->
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { box-sizing: border-box; }
 
-        html {
+        html, body {
             width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
-            background: #171717;
-        }
-
-        body {
-            width: 100%;
-            height: 100%;
-            height: 100dvh;
-            min-height: 100%;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background: #171717;
-            font-family: Arial, sans-serif;
+            color: #f1f1f1;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            -webkit-text-size-adjust: 100%;
         }
 
-        /* APLICATIVO EM TELA CHEIA */
-        #app-frame {
-            position: fixed;
-            top: 0;
-            left: 0;
-
-            display: block;
-
-            width: 100%;
-            height: 100%;
+        /* Layout: faixa fina com o H1 visível + iframe ocupando o resto da tela */
+        body {
+            height: 100vh;
             height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
 
+        .topo {
+            flex: 0 0 auto;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            background: #171717;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .topo h1 {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1;
+            letter-spacing: .01em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #app-frame {
+            flex: 1 1 auto;
+            min-height: 0;
+            width: 100%;
+            display: block;
             margin: 0;
             padding: 0;
             border: 0;
-
             background: #171717;
-
-            /* ESTABILIDADE VISUAL */
-            contain: strict;
         }
 
+        /* Texto para leitores de tela e rastreadores */
+        .sr-only {
+            position: absolute;
+            width: 1px; height: 1px;
+            margin: -1px; padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        iframe:focus-visible { outline: 3px solid #f5b301; outline-offset: -3px; }
     </style>
 </head>
 
 <body>
 
-    <!-- APLICATIVO ÁGUIA OFICIAL -->
-    <iframe
-        id="app-frame"
-        src="https://app.aguiaoficial.vip/pr/ZXbjMC6Q"
-        title="App Águia Oficial - Plataforma digital"
-        width="100%"
-        height="100%"
-        loading="eager"
-        allow="fullscreen; clipboard-read; clipboard-write"
-        allowfullscreen
-        referrerpolicy="strict-origin-when-cross-origin">
-    </iframe>
+    <header class="topo">
+        <h1>Águia Oficial – Banca Águia Oficial e App</h1>
+    </header>
+
+    <p class="sr-only">
+        Acesse a Águia Oficial, conheça a Banca Águia Oficial e use o aplicativo pelo celular,
+        tablet ou computador. Conteúdo destinado a maiores de 18 anos. Jogue com responsabilidade.
+    </p>
+
+    <main style="display:contents">
+        <iframe
+            id="app-frame"
+            src="https://app.aguiaoficial.vip/pr/ZXbjMC6Q"
+            title="App Águia Oficial - Plataforma digital"
+            width="100%"
+            height="100%"
+            loading="eager"
+            allow="fullscreen *; clipboard-read *; clipboard-write *; autoplay *; encrypted-media *; picture-in-picture *; payment *; web-share *"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </main>
+
+    <noscript>
+        <p style="position:fixed;inset:0;z-index:3;margin:0;padding:24px;background:#171717;color:#f1f1f1;">
+            <strong>Águia Oficial</strong><br>
+            Ative o JavaScript ou
+            <a href="https://app.aguiaoficial.vip/pr/ZXbjMC6Q" style="color:#f5b301;">acesse o aplicativo aqui</a>.
+        </p>
+    </noscript>
 
 </body>
 </html>
